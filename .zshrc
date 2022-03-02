@@ -12,7 +12,7 @@ ZSH_THEME="josh"
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 14
 
-plugins=(git zsh-autosuggestions dirhistory zsh-syntax-highlighting
+plugins=(zsh-autosuggestions git dirhistory zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
