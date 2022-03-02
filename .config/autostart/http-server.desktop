@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=http-server ./Custom/
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=http server
+Name=http server
+Comment[en_US]=
+Comment=
