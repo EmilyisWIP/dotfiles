@@ -8,7 +8,7 @@ export EDITOR='atom'
 
 
 # Theme
-ZSH_THEME="apple"
+ZSH_THEME="eastwood"
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 14
 
