@@ -4,16 +4,22 @@ alias palette="wal --preview -i $(gsettings get org.gnome.desktop.background pic
 alias crun="cargo run -q --release"
 alias crund="cargo run"
 
+
+$ cdls() { cd "$@"  && exa -1ah; }
+alias cdl="cdls"
 alias py="python3"
 alias image="eog"
 alias aliases="atom /home/subject05/.aliases.sh"
 alias bat="batcat --theme ansi-dark"
 
+alias push="git push"
+$ commit() {git commit -m "$@"}
+
+
 alias zshrc="atom ~/.zshrc"
 alias bashrc="atom ~/.bashrc"
 alias alacrittycfg="atom ~/.config/alacritty/alacritty.yml"
 alias neofetchcfg="atom ~/.config/neofetch/config.conf"
-
 
 alias chrome="/usr/bin/google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode %U"
 alias modpack="cmpdl"
@@ -26,6 +32,7 @@ alias update="sudo apt-fast update && sudo apt-fast upgrade"
 alias aptupd="sudo apt-fast update"
 alias aptupg="sudo apt-fast upgrade"
 alias install="sudo apt-fast install"
+alias reinstall="sudo apt-fast reinstall"
 alias remove="sudo apt remove"
 alias purge="sudo apt purge"
 

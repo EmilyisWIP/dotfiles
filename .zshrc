@@ -31,3 +31,4 @@ cat ~/.cache/wal/sequences
 source <(cod init $$ zsh)
 
 export PATH="/home/subject05/.local/bin:$PATH"
+export PATH="/home/subject05/.cargo/bin/:$PATH"

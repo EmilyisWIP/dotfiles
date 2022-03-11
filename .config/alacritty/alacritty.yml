@@ -1,5 +1,5 @@
 # subject05 configuration
-window.opacity: 0.94
+
 window:
   title: Alacritty
   dimensions:
@@ -7,6 +7,8 @@ window:
   padding:
     x: 4
     y: 4
+shell:
+  program: /bin/zsh
 
 mouse:
   hide_when_typing: true
@@ -21,24 +23,17 @@ font:
   normal:
     family: JetBrainsMono Nerd Font Mono
     style: Regular
-  bold:
-    family: JetBrainsMono Nerd Font Mono
-    style: Bold
-  italic:
-    family: JetBrainsMono Nerd Font Mono
-    style: italic
-  bold_italic:
-    family: JetBrainsMono Nerd Font Mono
-    style: Bold Italic
 
 # Colors
 #
 key_bindings:
-  - { key: V,          mods: Control, action: Paste                  }
-  - { key: C,          mods: Control, action: Copy                   }
-  - { key: C,          mods: Control|Shift, chars: "\u0003"          }
-  - { key: Escape,                          chars: "\u0003"          }
-  - { key: Tab,        mods: Control,         chars: "\x05"          }
-  - { key: Back,       mods: Control, chars: "\x17"                  }
-  - { key: Key1,       mods: Control,       action: IncreaseFontSize }
-  - { key: Key2,       mods: Control,       action: DecreaseFontSize }
+  - { key: Escape,                                           chars: "\u0003"              }
+  - { key: V,         mods: Control,                         action: Paste                }
+  - { key: C,         mods: Control,                         action: Copy                 }
+  - { key: C,         mods: Control|Shift,                   chars: "\u0003"              }
+  - { key: Tab,       mods: Control,                         chars: "\x05"                }
+  - { key: Back,      mods: Control,                         chars: "\x17"                }
+  - { key: Key1,      mods: Control,                         action: IncreaseFontSize     }
+  - { key: Key2,      mods: Control,                         action: DecreaseFontSize     }
+  - { key: Escape,    mode: Search,                          action: SearchCancel         }
+  - { key: S,         mods: Control,       mode: ~Search,    action: SearchBackward       }
