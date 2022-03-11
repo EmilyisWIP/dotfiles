@@ -13,8 +13,7 @@ alias aliases="atom /home/subject05/.aliases.sh"
 alias bat="batcat --theme ansi-dark"
 
 alias push="git push"
-$ commit() {git commit -m "$@"}
-
+$ commit() {git commit -m "$@" -a}
 
 alias zshrc="atom ~/.zshrc"
 alias bashrc="atom ~/.bashrc"
