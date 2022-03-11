@@ -1,14 +1,20 @@
 alias walb="wal -q -i $(gsettings get org.gnome.desktop.background picture-uri | cut -d "/" -f 3-11 | sed 's/.$//' )"
 alias palette="wal --preview -i $(gsettings get org.gnome.desktop.background picture-uri | cut -d "/" -f 3-11 | sed 's/.$//' )"
 
+alias crun="cargo run -q --release"
+alias crund="cargo run"
 
 alias py="python3"
 alias image="eog"
 alias aliases="atom /home/subject05/.aliases.sh"
 alias bat="batcat --theme ansi-dark"
+
 alias zshrc="atom ~/.zshrc"
+alias bashrc="atom ~/.bashrc"
 alias alacrittycfg="atom ~/.config/alacritty/alacritty.yml"
 alias neofetchcfg="atom ~/.config/neofetch/config.conf"
+
+
 alias chrome="/usr/bin/google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode %U"
 alias modpack="cmpdl"
 alias disk="duf"

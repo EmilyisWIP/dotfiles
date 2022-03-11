@@ -11,8 +11,12 @@ export EDITOR='atom'
 ZSH_THEME="eastwood"
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 14
+#
 
-plugins=(zsh-autosuggestions git dirhistory zsh-syntax-highlighting
+plugins=(
+zoxide
+zsh-autosuggestions
+zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
