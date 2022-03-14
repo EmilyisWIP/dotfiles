@@ -1,33 +1,44 @@
+alias aliases="$EDITOR /home/subject05/.aliases.sh"
+alias bat="batcat --theme ansi-dark"
 alias walb="wal -q -i $(gsettings get org.gnome.desktop.background picture-uri | cut -d "/" -f 3-11 | sed 's/.$//' )"
+
+
 alias palette="wal --preview -i $(gsettings get org.gnome.desktop.background picture-uri | cut -d "/" -f 3-11 | sed 's/.$//' )"
 
 alias crun="cargo run -q --release"
-alias crund="cargo run"
+alias crund="cargo run --release"
 
 
-$ cdls() { cd "$@"  && exa -1ah; }
-alias cdl="cdls"
+
+
+
+
+$ cdls() { cd "$@"  && exa -ah; }
+$ cdl() { cd "$@"  && exa -1ah; }
+
+alias desktop-update="update-desktop-database ~/.local/share/applications"
+alias cd="cdls"
 alias py="python3"
 alias image="eog"
-alias aliases="atom /home/subject05/.aliases.sh"
-alias bat="batcat --theme ansi-dark"
+alias fdf="fd -iIt f"
+alias fdd="fd -iIt d"
+
 
 alias push="git push"
 $ commit() {git commit -m "$@" -a}
 
-alias zshrc="atom ~/.zshrc"
-alias bashrc="atom ~/.bashrc"
-alias alacrittycfg="atom ~/.config/alacritty/alacritty.yml"
-alias neofetchcfg="atom ~/.config/neofetch/config.conf"
+alias zshrc="$EDITOR ~/.zshrc"
+alias bashrc="$EDITOR ~/.bashrc"
+alias alacrittycfg="$EDITOR ~/.config/alacritty/alacritty.yml"
+alias neofetchcfg="$EDITOR ~/.config/neofetch/config.conf"
 
 alias chrome="/usr/bin/google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode %U"
 alias modpack="cmpdl"
 alias disk="duf"
 
 
-
-
 alias update="sudo apt-fast update && sudo apt-fast upgrade"
+alias aptup="sudo apt-fast update && sudo apt-fast upgrade"
 alias aptupd="sudo apt-fast update"
 alias aptupg="sudo apt-fast upgrade"
 alias install="sudo apt-fast install"
@@ -38,17 +49,8 @@ alias purge="sudo apt purge"
 
 
 
-
-
-
-
 # Wallpapers
 alias abstract="wal -q -i Pictures/Wallpapers/abstract.jpg"
-alias mushroom='wal -q -i Pictures/Wallpapers/mushroom.png'
-alias railroads="wal -q -i Pictures/Wallpapers/railroads.jpeg"
-alias cave="wal -q -i Pictures/Wallpapers/cave.png"
-
-
 
 #fuck
 fuck () {
