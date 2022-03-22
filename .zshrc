@@ -35,3 +35,4 @@ export PATH="/home/subject05/.local/bin:$PATH"
 export PATH="/home/subject05/.cargo/bin/:$PATH"
 
 #source /home/subject05/.config/broot/launcher/bash/br
+eval "$(starship init zsh)"
