@@ -1,3 +1,4 @@
+source ~/.config/zsh/zsh-snap/znap.zsh
 # Path to your oh-my-zsh installation.
 export ZSH="/home/subject05/.oh-my-zsh"
 export XDG_CONFIG_HOME="/home/subject05/.config"
@@ -8,7 +9,7 @@ export EDITOR='atom'
 
 
 # Theme
-ZSH_THEME="eastwood"
+ZSH_THEME="spaceship"
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 14
 #
@@ -33,4 +34,4 @@ source <(cod init $$ zsh)
 export PATH="/home/subject05/.local/bin:$PATH"
 export PATH="/home/subject05/.cargo/bin/:$PATH"
 
-source /home/subject05/.config/broot/launcher/bash/br
+#source /home/subject05/.config/broot/launcher/bash/br
