@@ -9,13 +9,22 @@ alias crun="cargo run -q --release"
 alias crund="cargo run --release"
 
 
-
-
+$ atomopen () {
+            if echo $(which $@) | grep -q found
+              ;echo "Opening $@"
+              ;then atom $@;
+            else atom_which=$(which $@)
+              ;echo "Opening file in \$PATH"
+              ;echo $atom_which
+              ; atom $atom_which; fi
+            }
 
 
 $ cdls() { cd "$@"  && exa -ah; }
 $ cdl() { cd "$@"  && exa -1ah; }
 
+
+alias atom="atomopen"
 alias desktop-update="update-desktop-database ~/.local/share/applications"
 alias cd="cdls"
 alias py="python3"
@@ -37,7 +46,8 @@ alias modpack="cmpdl"
 alias disk="duf"
 
 
-alias update="sudo apt-fast update && sudo apt-fast upgrade"
+alias update="sudo apt-fast update"
+alias upgrade="sudo apt-fast upgrade"
 alias aptup="sudo apt-fast update && sudo apt-fast upgrade"
 alias aptupd="sudo apt-fast update"
 alias aptupg="sudo apt-fast upgrade"
@@ -45,7 +55,7 @@ alias install="sudo apt-fast install"
 alias reinstall="sudo apt-fast reinstall"
 alias remove="sudo apt remove"
 alias purge="sudo apt purge"
-
+alias autoremove="sudo apt autoremove"
 
 
 

@@ -22,7 +22,17 @@ zsh-syntax-highlighting
 
 source $ZSH/oh-my-zsh.sh
 eval "$(zoxide init zsh)"
+
+autoload bashcompinit
+bashcompinit
+source /usr/share/bash-completion/completions/nala
 source /usr/share/zsh/functions/Completion/Debian/_apt-fast
+
+autoload bashcompinit
+bashcompinit
+source /usr/share/bash-completion/completions/nala
+
+
 
 
 cat ~/.cache/wal/sequences
@@ -35,4 +45,4 @@ export PATH="/home/subject05/.local/bin:$PATH"
 export PATH="/home/subject05/.cargo/bin/:$PATH"
 
 #source /home/subject05/.config/broot/launcher/bash/br
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
