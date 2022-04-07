@@ -48,7 +48,7 @@ alias disk="duf"
 
 alias update="sudo apt-fast update"
 alias upgrade="sudo apt-fast upgrade"
-alias aptup="sudo apt-fast update && sudo apt-fast upgrade"
+alias aptup="sudo apt-fast update; sudo apt-fast upgrade"
 alias aptupd="sudo apt-fast update"
 alias aptupg="sudo apt-fast upgrade"
 alias install="sudo apt-fast install"
