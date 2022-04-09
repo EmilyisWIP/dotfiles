@@ -16,16 +16,32 @@ $ atomopen () {
             else atom_which=$(which $@)
               ;echo "Opening file in \$PATH"
               ;echo $atom_which
-              ; atom $atom_which; fi
+              ; atom $atom_which
+            ;fi
             }
+$ search () {
+              found=$(fd $@ | fzf -1)
+            if [ $found ]
+              ;then echo "Opening $found"
+              ;atom $found
+
+            else echo "Query empty"
+              ;fi
+            }
+
+
 
 
 $ cdls() { cd "$@"  && exa -ah; }
 $ cdl() { cd "$@"  && exa -1ah; }
 
 
+
+
+
+alias fd="fd -IiH"
 alias atom="atomopen"
-alias desktop-update="update-desktop-database ~/.local/share/applications"
+alias dotdesktop="update-desktop-database ~/.local/share/applications ; echo Refreshed"
 alias cd="cdls"
 alias py="python3"
 alias image="eog"
