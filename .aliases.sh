@@ -1,5 +1,6 @@
-alias aliases="$EDITOR /home/subject05/.aliases.sh"
-alias bat="batcat --theme ansi-dark"
+alias aliases="xdg-open /home/subject05/.aliases.sh"
+alias batcat="batcat --theme ansi-dark"
+alias bat="batcat"
 alias walb="wal -q -i $(gsettings get org.gnome.desktop.background picture-uri | cut -d "/" -f 3-11 | sed 's/.$//' )"
 
 
@@ -9,40 +10,46 @@ alias crun="cargo run -q --release"
 alias crund="cargo run --release"
 
 
-$ atomopen () {
-            if echo $(which $@) | grep -q found
-              ;echo "Opening $@"
-              ;then atom $@;
+$ open () {
+            if echo $(which $@) | grep -q "found"
+              ;then echo "File \"$@\" not found"
+              ;echo "Creating \"$@\""
+              ;$EDITOR $@;
             else atom_which=$(which $@)
               ;echo "Opening file in \$PATH"
               ;echo $atom_which
-              ; atom $atom_which
+              ;xdg-open $atom_which
             ;fi
-            }
+            unset atom_which
+          }
+
 $ search () {
               found=$(fd $@ | fzf -1)
             if [ $found ]
               ;then echo "Opening $found"
-              ;atom $found
+              ;xdg-open $found
 
             else echo "Query empty"
               ;fi
-            }
+            unset found
+          }
 
+$ which-copy () {
+            if echo $(which $@) | grep -q "not found"
+              ;then echo "$@ Not found"
+            else echo $(which $@); echo $(which $@) | xclip -sel clip;fi
+          }
 
+alias exa="\exa --icons --group-directories-first"
 
+$ c() { cd "$@"  ; exa  }
+$ cdl () { cd "$@"  ; exa -1 }
 
-$ cdls() { cd "$@"  && exa -ah; }
-$ cdl() { cd "$@"  && exa -1ah; }
-
-
-
-
-
+alias nautilus="nautilus -w $(pwd)"
+alias xclip-sys="xclip -sel clip"
 alias fd="fd -IiH"
-alias atom="atomopen"
 alias dotdesktop="update-desktop-database ~/.local/share/applications ; echo Refreshed"
-alias cd="cdls"
+alias cd="c"
 alias py="python3"
 alias image="eog"
 alias fdf="fd -iIt f"
