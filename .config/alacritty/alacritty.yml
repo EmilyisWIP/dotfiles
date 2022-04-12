@@ -1,4 +1,4 @@
-# subject05 configuration
+#Emily's terminal :>
 
 window:
   title: Alacritty
@@ -24,8 +24,6 @@ font:
     family: JetBrainsMono Nerd Font Mono
     style: Regular
 
-# Colors
-#
 key_bindings:
   - { key: Escape,                                           chars: "\u0003"              }
   - { key: V,         mods: Control,                         action: Paste                }

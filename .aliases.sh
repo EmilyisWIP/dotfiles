@@ -1,91 +1,95 @@
-alias aliases="xdg-open /home/subject05/.aliases.sh"
+# Emily's aliases :>
+
+  ALIASES="/home/subject05/.aliases.sh"
+  ZSHRC="~/.zshrc"
+  BASHRC="~/.bashrc"
+  ALACRITTYCFG="~/.config/alacritty/alacritty.yml"
+  NEOFETCH="~/.config/neofetch/config.conf"
+
+
+# APT-FAST, PACKAGES
+
+  alias update="sudo apt-fast update"
+  alias upgrade="sudo apt-fast upgrade"
+  alias aptup="sudo apt-fast update; sudo apt-fast upgrade"
+  alias aptupd="sudo apt-fast update"
+  alias aptupg="sudo apt-fast upgrade"
+  alias install="sudo apt-fast install"
+  alias reinstall="sudo apt-fast reinstall"
+  alias remove="sudo apt remove"
+  alias purge="sudo apt purge"
+  alias autoremove="sudo apt autoremove"
+
+# Navigation
+
+$ cd-list() {
+    if [ -z $1 ]; then
+      # echo "0 set"
+      \cd; exa
+    elif [ ! -z $2 ]; then
+      # echo "2 set"
+      \cd $1  >/dev/null 2>&1 || echo "\033[0;31mNo such dir\033[0m"; exa ${@: 2};
+    else
+      # echo "1 set"
+      if [ -d $1 ]; then \cd $1  >/dev/null 2>&1; exa;
+    else \cd; exa $1;
+      fi
+  fi
+}
+
+alias cd="cd-list"
+
+
+# Configs
+alias aliases="xdg-open $ALIASES"
+alias zshrc="xdg-open $ZSHRC"
+alias bashrc="xdg-open $BASHRC"
+alias alacrittycfg="xdg-open $ALACRITTYCFG"
+alias neofetchcfg="xdg-open $NEOFETCH"
+
+# Misc
+alias nautilus="nautilus -w $(pwd)"
+
 alias batcat="batcat --theme ansi-dark"
 alias bat="batcat"
-alias walb="wal -q -i $(gsettings get org.gnome.desktop.background picture-uri | cut -d "/" -f 3-11 | sed 's/.$//' )"
 
+alias exa="\exa --icons --group-directories-first"
+alias py="python3"
+alias fd="fd -IiH"
+alias img="eog"
+alias disk="duf"
+alias chrome="/usr/bin/google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode %U"
 
-alias palette="wal --preview -i $(gsettings get org.gnome.desktop.background picture-uri | cut -d "/" -f 3-11 | sed 's/.$//' )"
+alias modpack="cmpdl"
+
+alias null=">/dev/null 2>&1"
 
 alias crun="cargo run -q --release"
 alias crund="cargo run --release"
 
-
-$ open () {
-            if echo $(which $@) | grep -q "found"
-              ;then echo "File \"$@\" not found"
-              ;echo "Creating \"$@\""
-              ;$EDITOR $@;
-            else atom_which=$(which $@)
-              ;echo "Opening file in \$PATH"
-              ;echo $atom_which
-              ;xdg-open $atom_which
-            ;fi
-            unset atom_which
-          }
-
-$ search () {
-              found=$(fd $@ | fzf -1)
-            if [ $found ]
-              ;then echo "Opening $found"
-              ;xdg-open $found
-
-            else echo "Query empty"
-              ;fi
-            unset found
-          }
-
-$ which-copy () {
-            if echo $(which $@) | grep -q "not found"
-              ;then echo "$@ Not found"
-            else echo $(which $@); echo $(which $@) | xclip -sel clip;fi
-          }
-
-alias exa="\exa --icons --group-directories-first"
-
-$ c() { cd "$@"  ; exa  }
-$ cdl () { cd "$@"  ; exa -1 }
-
-alias nautilus="nautilus -w $(pwd)"
-alias xclip-sys="xclip -sel clip"
-alias fd="fd -IiH"
-alias dotdesktop="update-desktop-database ~/.local/share/applications ; echo Refreshed"
-alias cd="c"
-alias py="python3"
-alias image="eog"
-alias fdf="fd -iIt f"
-alias fdd="fd -iIt d"
-
-
-alias push="git push"
-$ commit() {git commit -m "$@" -a}
-
-alias zshrc="$EDITOR ~/.zshrc"
-alias bashrc="$EDITOR ~/.bashrc"
-alias alacrittycfg="$EDITOR ~/.config/alacritty/alacritty.yml"
-alias neofetchcfg="$EDITOR ~/.config/neofetch/config.conf"
-
-alias chrome="/usr/bin/google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode %U"
-alias modpack="cmpdl"
-alias disk="duf"
-
-
-alias update="sudo apt-fast update"
-alias upgrade="sudo apt-fast upgrade"
-alias aptup="sudo apt-fast update; sudo apt-fast upgrade"
-alias aptupd="sudo apt-fast update"
-alias aptupg="sudo apt-fast upgrade"
-alias install="sudo apt-fast install"
-alias reinstall="sudo apt-fast reinstall"
-alias remove="sudo apt remove"
-alias purge="sudo apt purge"
-alias autoremove="sudo apt autoremove"
+alias clip="xclip -sel clip"
 
 
 
-# Wallpapers
+
+
+
+# Wal
+alias walb="wal -q -i $(gsettings get org.gnome.desktop.background picture-uri | cut -d "/" -f3-11 | sed 's/.$//' )"
+
+alias palette="wal --preview -i $(gsettings get org.gnome.desktop.background picture-uri | cut -d "/" -f3-11 | sed 's/.$//' )"
+
 alias abstract="wal -q -i Pictures/Wallpapers/abstract.jpg"
+alias dracula="wal -q --theme dracula"
 
-#fuck
+# Git
+$ commit () { git commit -m "$@" -a }
+$ push () { git push }
+
+
+
+# Scripts
+
 fuck () {
                TF_PYTHONIOENCODING=$PYTHONIOENCODING;
                export TF_SHELL=zsh;
@@ -101,4 +105,32 @@ fuck () {
                unset TF_HISTORY;
                export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
                test -n "$TF_CMD" && print -s $TF_CMD
+           }
+
+$ open () {
+             if echo $(which $@) | grep -q "found"
+               ;then echo "File \"$@\" not found"
+               ;echo "Creating \"$@\""
+               ;$EDITOR $@;
+             else atom_which=$(which $@)
+               ;echo "Opening file in \$PATH"
+               ;echo $atom_which
+               ;xdg-open $atom_which
+             ;fi
+             unset atom_which}
+
+$ search () {
+               found=$(fd $@ | fzf -1)
+             if [ $found ]
+               ;then echo "Opening $found"
+               ;xdg-open $found
+             else echo "Query empty"
+               ;fi
+             unset found
+           }
+           
+$ which-copy () {
+             if echo $(which $@) | grep -q "not found"
+               ;then echo "$@ Not found"
+             else echo $(which $@); echo $(which $@) | xclip -sel clip;fi
            }
