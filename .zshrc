@@ -1,25 +1,22 @@
 #Emily's .zshrc :>
 
-export ZSH="/home/subject05/.oh-my-zsh"
-export XDG_CONFIG_HOME="/home/subject05/.config"
-export EDITOR="atom"
+ZSH="/home/subject05/.oh-my-zsh"
+XDG_CONFIG_HOME="/home/subject05/.config"
+EDITOR="atom"
 
-. ~/.aliases.sh
+source ~/.aliases.sh
 alias aliases="xdg-open /home/subject05/.aliases.sh"
 
 ZSH_THEME="spaceship"
 
-zstyle ':omz:update' mode auto
-zstyle ':omz:update' frequency 14
-
-
 plugins=(zoxide
         zsh-autosuggestions
-        zsh-syntax-highlighting
         zsh-interactive-cd
+        zsh-syntax-highlighting
       )
 
 source $ZSH/oh-my-zsh.sh
+source <(cod init $$ zsh)
 
 
 
@@ -28,8 +25,6 @@ cat ~/.cache/wal/sequences
 
 
 
-
+# Path
 export PATH="/home/subject05/.local/bin:$PATH"
 export PATH="/home/subject05/.cargo/bin/:$PATH"
-compdef _apt apt-fast=apt-gmet
-source <(cod init $$ zsh)
