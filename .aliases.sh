@@ -71,7 +71,7 @@ alias dracula="wal -q --theme dracula"
 # Git
 $ commit () { git commit -m "$@" -a }
 $ push () { git push }
-$ gp () { git commit -m "$@" -a; push >/dev/null }
+$ gp () { git commit -m "$@" -a; push }
 
 
 # Scripts
