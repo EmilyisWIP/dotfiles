@@ -122,17 +122,17 @@ $ which-copy () {
            }
 
 
-           $ cd-list() {
-               if [ -z $1 ]; then
-                 # echo "0 set"
-                 z; exa
-               elif [ ! -z $2 ]; then
-                 # echo "2 set"
-                 z $1  >/dev/null 2>&1 || echo "\033[0;31mNo such dir\033[0m"; exa ${@: 2};
-               else
-                 # echo "1 set"
-                 if [ -d $1 ]; then z $1  >/dev/null 2>&1; exa;
-               else z; exa $1;
-                 fi
-             fi
+$ cd-list() {
+     if [ -z $1 ]; then
+       # echo "0 set"
+       z; exa
+     elif [ ! -z $2 ]; then
+       # echo "2 set"
+       z $1  >/dev/null 2>&1 || echo "\033[0;31mNo such dir\033[0m"; exa ${@: 2};
+     else
+       # echo "1 set"
+       if [ -d $1 ]; then z $1  >/dev/null 2>&1; exa;
+     else z; exa $1;
+       fi
+   fi
            }
