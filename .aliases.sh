@@ -69,6 +69,7 @@ alias crund="cargo run --release"
 
 alias clip="xclip -sel clip"
 
+alias starship-init="source <(/usr/local/bin/starship init zsh --print-full-init)"
 
 
 
@@ -128,7 +129,7 @@ $ search () {
                ;fi
              unset found
            }
-           
+
 $ which-copy () {
              if echo $(which $@) | grep -q "not found"
                ;then echo "$@ Not found"

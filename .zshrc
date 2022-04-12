@@ -7,19 +7,16 @@ EDITOR="atom"
 source ~/.aliases.sh
 alias aliases="xdg-open /home/subject05/.aliases.sh"
 
-ZSH_THEME="spaceship"
+#ZSH_THEME="spaceship"
 
 plugins=(zoxide
         zsh-autosuggestions
         zsh-interactive-cd
-        zsh-syntax-highlighting
-      )
+        zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 source <(cod init $$ zsh)
-
-
-
+source <(/usr/local/bin/starship init zsh --print-full-init)
 
 cat ~/.cache/wal/sequences
 
