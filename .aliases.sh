@@ -5,7 +5,7 @@
   BASHRC="~/.bashrc"
   ALACRITTYCFG="~/.config/alacritty/alacritty.yml"
   NEOFETCH="~/.config/neofetch/config.conf"
-
+  FISH=".config/fish/config.fish"
 
 # APT-FAST, PACKAGES
 
@@ -31,7 +31,7 @@ alias zshrc="xdg-open $ZSHRC"
 alias bashrc="xdg-open $BASHRC"
 alias alacrittycfg="xdg-open $ALACRITTYCFG"
 alias neofetchcfg="xdg-open $NEOFETCH"
-
+alias fishrc="xdg-open $FISH"
 # Misc
 alias nautilus="nautilus -w $(pwd)"
 
@@ -76,7 +76,7 @@ $ gp () { git commit -m "$@" -a; push }
 
 # Scripts
 
-fuck () {
+$ fuck () {
                TF_PYTHONIOENCODING=$PYTHONIOENCODING;
                export TF_SHELL=zsh;
                export TF_ALIAS=fuck;
@@ -91,7 +91,7 @@ fuck () {
                unset TF_HISTORY;
                export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
                test -n "$TF_CMD" && print -s $TF_CMD
-           }
+             }
 
 $ open () {
              if echo $(which $@) | grep -q "found"

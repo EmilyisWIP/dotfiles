@@ -20,8 +20,10 @@ source <(/usr/local/bin/starship init zsh --print-full-init)
 
 cat ~/.cache/wal/sequences
 
-
-
 # Path
 export PATH="/home/subject05/.local/bin:$PATH"
 export PATH="/home/subject05/.cargo/bin/:$PATH"
+
+
+bindkey '^[[1;5D' emacs-backward-word
+bindkey '^[[1;5C' emacs-forward-word
