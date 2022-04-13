@@ -4,6 +4,8 @@ ZSH="/home/subject05/.oh-my-zsh"
 XDG_CONFIG_HOME="/home/subject05/.config"
 EDITOR="atom"
 
+source $ZSH/oh-my-zsh.sh
+# unalias -a
 source ~/.aliases.sh
 alias aliases="xdg-open /home/subject05/.aliases.sh"
 
@@ -14,7 +16,6 @@ plugins=(zoxide
         zsh-interactive-cd
         zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
 source <(cod init $$ zsh)
 source <(/usr/local/bin/starship init zsh --print-full-init)
 

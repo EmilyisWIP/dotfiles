@@ -35,10 +35,12 @@ alias fishrc="xdg-open $FISH"
 # Misc
 alias nautilus="nautilus -w $(pwd)"
 
-alias batcat="batcat --theme ansi-dark"
+alias batcat="batcat --theme base-16"
 alias bat="batcat"
 
 alias exa="\exa --icons --group-directories-first"
+alias ls="exa"
+alias ll="exa -1"
 alias py="python3"
 alias fd="fd -IiH"
 alias img="eog"
