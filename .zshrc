@@ -66,7 +66,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git zoxide zsh-interactive-cd zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(zoxide zsh-interactive-cd zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
