@@ -4,9 +4,9 @@
   ZSHRC="~/.zshrc"
   BASHRC="~/.bashrc"
   ALACRITTYCFG="~/.config/alacritty/alacritty.yml"
-  NEOFETCH="~/.config/neofetch/config.conf"
-  FISH=".config/fish/config.fish"
-
+  NEOFETCHCFG="~/.config/neofetch/config.conf"
+  FISHRC=".config/fish/config.fish"
+  export STARSHIP_CONFIG=".config/starship/starship.toml"
 # APT-FAST, PACKAGES
 
   alias update="sudo apt-fast update"
@@ -32,6 +32,8 @@ alias bashrc="xdg-open $BASHRC"
 alias alacrittycfg="xdg-open $ALACRITTYCFG"
 alias neofetchcfg="xdg-open $NEOFETCH"
 alias fishrc="xdg-open $FISH"
+alias starshipcfg="xdg-open $STARSHIP_CONFIG"
+
 # Misc
 alias nautilus="nautilus -w $(pwd)"
 
