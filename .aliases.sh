@@ -7,6 +7,7 @@
   NEOFETCHCFG="~/.config/neofetch/config.conf"
   FISHRC=".config/fish/config.fish"
   export STARSHIP_CONFIG=".config/starship/starship.toml"
+
 # APT-FAST, PACKAGES
 
   alias update="sudo apt-fast update"
