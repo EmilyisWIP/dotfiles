@@ -6,7 +6,7 @@
   ALACRITTYCFG="~/.config/alacritty/alacritty.yml"
   NEOFETCHCFG="~/.config/neofetch/config.conf"
   FISHRC=".config/fish/config.fish"
-  export STARSHIP_CONFIG=".config/starship/starship.toml"
+  STARSHIP_CONFIG="~/.config/starship.toml"
 
 # APT-FAST, PACKAGES
 
@@ -36,9 +36,9 @@ alias fishrc="xdg-open $FISH"
 alias starshipcfg="xdg-open $STARSHIP_CONFIG"
 
 # Misc
-alias nautilus="nautilus -w $(pwd)"
+# alias nautilus="nautilus $(pwd)"
 
-alias batcat="batcat --theme base-16"
+alias batcat="batcat --theme base16"
 alias bat="batcat"
 
 alias exa="\exa --icons --group-directories-first"
