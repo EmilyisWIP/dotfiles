@@ -31,7 +31,7 @@ alias aliases="xdg-open $ALIASES"
 alias zshrc="xdg-open $ZSHRC"
 alias bashrc="xdg-open $BASHRC"
 alias alacrittycfg="xdg-open $ALACRITTYCFG"
-alias neofetchcfg="xdg-open $NEOFETCH"
+alias neofetchcfg="xdg-open $NEOFETCHCFG"
 alias fishrc="xdg-open $FISH"
 alias starshipcfg="xdg-open $STARSHIP_CONFIG"
 

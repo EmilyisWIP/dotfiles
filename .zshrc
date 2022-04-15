@@ -15,12 +15,12 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-
+source /home/subject05/.cache/wal/colors.sh
 source ~/.aliases.sh
 source <(cod init $$ zsh)
 source <(/usr/local/bin/starship init zsh --print-full-init)
 
-cat ~/.cache/wal/sequences
+cat ~/.cache/wal/dracula_seq
 
 
 bindkey '^[[1;5D' emacs-backward-word
