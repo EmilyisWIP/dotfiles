@@ -29,3 +29,4 @@ bindkey '^[[1;5C' emacs-forward-word
 # Path
 export PATH="/home/subject05/.local/bin:$PATH"
 export PATH="/home/subject05/.cargo/bin/:$PATH"
+clear;

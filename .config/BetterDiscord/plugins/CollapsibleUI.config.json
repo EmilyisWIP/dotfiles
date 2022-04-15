@@ -1,0 +1,26 @@
+{
+    "currentVersionInfo": {
+        "version": "4.3.1",
+        "hasShownChangelog": true
+    },
+    "disableTransitions": "false",
+    "transitionSpeed": "300",
+    "disableToolbarCollapse": "true",
+    "disableSettingsCollapse": "false",
+    "dynamicUncollapse": "false",
+    "dynamicUncollapseDistance": "35",
+    "resizableChannelList": "false",
+    "buttonsOrder": "1,2,4,6,7,3,5",
+    "settingsButtonsMaxWidth": "100",
+    "toolbarIconMaxWidth": "300",
+    "membersListMaxWidth": "240",
+    "userAreaMaxHeight": "300",
+    "msgBarMaxHeight": "400",
+    "windowBarHeight": "18",
+    "collapsedDistance": "0",
+    "cui.serverListButtonActive": "true",
+    "cui.channelListButtonActive": "true",
+    "cui.userAreaButtonActive": "true",
+    "cui.msgBarButtonActive": "true",
+    "cui.callContainerButtonActive": "true"
+}

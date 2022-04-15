@@ -1,0 +1,23 @@
+{
+    "currentVersionInfo": {
+        "version": "1.2.2",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "trigger": {
+            "displayOn": "hover",
+            "hoverDelay": 0.2
+        },
+        "appearance": {
+            "displayMode": "compact",
+            "groupSpacingSync": true,
+            "groupSpacing": 16,
+            "darkenChat": false,
+            "darkenLevel": 0.3,
+            "dateDividers": true,
+            "typingUsers": true,
+            "popoutHeight": 30,
+            "messagesCount": 20
+        }
+    }
+}

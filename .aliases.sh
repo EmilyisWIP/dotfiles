@@ -40,9 +40,7 @@ alias starshipcfg="xdg-open $STARSHIP_CONFIG"
 
 alias batcat="batcat --theme base16"
 alias bat="batcat"
-
-alias exa="\exa --icons --group-directories-first"
-alias ls="exa"
+alias ls="exa --icons --group-directories-first"
 alias ll="exa -1"
 alias py="python3"
 alias fd="fd -IiH"
@@ -52,7 +50,6 @@ alias chrome="/usr/bin/google-chrome-stable --enable-features=WebUIDarkMode --fo
 
 alias modpack="cmpdl"
 
-alias null=">/dev/null 2>&1"
 
 alias crun="cargo run -q --release"
 alias crund="cargo run --release"
@@ -130,14 +127,14 @@ $ which-copy () {
 $ cd-list() {
      if [ -z $1 ]; then
        # echo "0 set"
-       z; exa
+       z; ls
      elif [ ! -z $2 ]; then
        # echo "2 set"
-       z $1  >/dev/null 2>&1 || echo "\033[0;31mNo such dir\033[0m"; exa ${@: 2};
+       z $1  >/dev/null 2>&1 || echo "\033[0;31mNo such dir\033[0m"; ls ${@: 2};
      else
        # echo "1 set"
-       if [ -d $1 ]; then z $1  >/dev/null 2>&1; exa;
-     else z; exa $1;
+       if [ -d $1 ]; then z $1  >/dev/null 2>&1; ls;
+     else z; ls $1;
        fi
    fi
            }

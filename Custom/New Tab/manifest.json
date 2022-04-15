@@ -1,0 +1,12 @@
+{
+    "name": "My custom new tab page",
+    "description": "Overrides the new tab page",
+    "version": "1.0",
+    "incognito": "split",
+    "chrome_url_overrides": {
+      "newtab": "new.html"
+    },
+    "manifest_version":  3,
+        "permissions": [
+        "storage", "tabs", "<all_urls>", "activeTab", "http://*/*", "https://*/*"]
+  }

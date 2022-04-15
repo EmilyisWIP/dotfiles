@@ -1,0 +1,31 @@
+{
+	"all": {
+		"changeLogs": {
+			"BDFDB": "2.3.0",
+			"BetterFriendList": "1.3.9",
+			"BetterNsfwTag": "1.2.7",
+			"BetterSearchPage": "1.2.0",
+			"GameActivityToggle": "1.0.4",
+			"GoogleSearchReplace": "1.3.2",
+			"ImageUtilities": "4.7.1",
+			"LastMessageDate": "1.2.8",
+			"ShowHiddenChannels": "3.0.4",
+			"StaffTag": "1.5.0",
+			"ThemeSettings": "1.3.3",
+			"WriteUpperCase": "1.3.1"
+		},
+		"choices": {
+			"toastPosition": "center"
+		},
+		"general": {
+			"showSupportBadges": false,
+			"showToasts": false,
+			"useChromium": false,
+			"shareData": true
+		},
+		"hashes": {
+			"0BDFDB.data.json": "3070ac0fef4e7feb7f5dae53f54a9efbd69b2fbe",
+			"0BDFDB.raw.css": "afe854fd60051d750cebb99fb290bdce5c415f27"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "currentVersionInfo": {
+        "version": "1.1.0",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "customPronouns": {
+            "293455247664218112": "ti"
+        },
+        "showOnTimestamp": true,
+        "showInUserPopout": true
+    }
+}

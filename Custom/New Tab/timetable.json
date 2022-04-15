@@ -1,0 +1,7 @@
+lessons {
+  [
+    { "lesson":"Math"},
+    { "lesson":"Slovak" },
+    { "lesson":"English"}
+  ]
+}

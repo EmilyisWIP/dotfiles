@@ -1,0 +1,25 @@
+{
+    "currentVersionInfo": {
+        "version": "2.1.53",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "channels": {},
+        "servers": {
+            "unhidden": [],
+            "706602726565609563": {
+                "id": "706602726565609563",
+                "name": "Stream Cinema Community",
+                "icon": "https://cdn.discordapp.com/icons/706602726565609563/15feefd4354ee02b8c709e63c657ab6d.webp?"
+            },
+            "761681655143858248": {
+                "id": "761681655143858248",
+                "name": "Infinite Power",
+                "icon": "https://cdn.discordapp.com/icons/761681655143858248/be66b29fc744f3bf8388b269ad826d86.webp?"
+            }
+        },
+        "users": {},
+        "folders": {},
+        "hideBlocked": true
+    }
+}

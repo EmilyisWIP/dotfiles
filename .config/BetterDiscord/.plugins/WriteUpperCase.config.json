@@ -1,0 +1,10 @@
+{
+	"general": {
+		"addQuickToggle": true
+	},
+	"places": {
+		"changeEdit": false,
+		"changeForm": true,
+		"changeNormal": true
+	}
+}

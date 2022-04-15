@@ -1,0 +1,22 @@
+{
+	"all": {
+		"hashes": {
+			"0BDFDB.data.json": "a372dfd478fed12f97edbd12b495ef92beab4255",
+			"0BDFDB.raw.css": "afe854fd60051d750cebb99fb290bdce5c415f27"
+		},
+		"choices": {
+			"toastPosition": "right"
+		},
+		"general": {
+			"shareData": true,
+			"showToasts": false,
+			"showSupportBadges": false,
+			"useChromium": false
+		},
+		"changeLogs": {
+			"BDFDB": "2.3.0",
+			"ImageUtilities": "4.7.1",
+			"BetterSearchPage": "1.2.0"
+		}
+	}
+}

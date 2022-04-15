@@ -1,0 +1,169 @@
+@import "colors.css";
+
+html {
+  background: var(--color0);
+  user-select: none;
+  overflow: hidden;
+  font-family: "JetBrainsMono";
+  font-size: 3.2em;
+  text-align: center;
+}
+
+a {
+  color: var(--color7);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color10);
+}
+
+li {
+  list-style-type: none;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.quote {
+  color: var(--color4);
+  display: flex;
+  position: fixed;
+  text-align: center;
+  top: 112;
+  transition: all 0.3s;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+.align {
+  display: flex;
+  position: fixed;
+  top: 30%;
+  /* flex-wrap: wrap; */
+  place-content: center;
+  transition: all 400ms;
+}
+
+.images {
+  display: flex;
+  flex-wrap: nowrap;
+  bottom: 0;
+  image-rendering: pixelated;
+  transition: transform 400ms;
+  animation: slide;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+  position: absolute;
+  justify-content: center
+}
+
+@keyframes slide {
+  from {
+    margin-top: 1028px;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-height: 840px) {
+  .images {
+    transform: translate(0px, 528px);
+  }
+}
+
+@media only screen and (max-height: 420px) {
+  .quote {
+    transform: translate(0px, -200px);
+  }
+
+  .align {
+    top: 0%;
+  }
+}
+
+@media only screen and (max-height: 230px) {
+  .align {
+    transform: translate(0px, -400px);
+
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .images {
+    transform: translate(0px, 528px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .quote {
+    transform: translate(0px, -200px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .align {
+    transform: translate(0px, -600px);
+  }
+}
+
+.image1 {
+  width: 328px;
+  height: 328px;
+  background: url("./sprite1.png") no-repeat;
+}
+
+.image1:hover {
+  width: 328px;
+  height: 328px;
+  background-position: bottom;
+}
+
+.image2 {
+  width: 328px;
+  height: 328px;
+  background: url("./sprite2.png") no-repeat;
+}
+
+.image2:hover {
+  width: 328px;
+  height: 328px;
+  background-position: bottom;
+}
+
+.image3 {
+  width: 328px;
+  height: 328px;
+  background: url("./sprite3.png") no-repeat;
+}
+
+.image3:hover {
+  width: 328px;
+  height: 328px;
+  background-position: bottom;
+}
+
+ol {
+  padding-right: 0% !important;
+  padding-left: 0% !important;
+}
+
+ul li:not(:first-child) {
+  -webkit-text-fill-color: initial;
+}
+
+li:first-child {
+  font-weight: bold;
+  color: var(--color4);
+  text-align: center;
+}
+
+.spacer {
+  min-width: 20px;
+}
