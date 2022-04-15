@@ -9,7 +9,6 @@
   STARSHIP_CONFIG="~/.config/starship.toml"
 
 # APT-FAST, PACKAGES
-
   alias update="sudo apt-fast update"
   alias upgrade="sudo apt-fast upgrade"
   alias aptup="sudo apt-fast update; sudo apt-fast upgrade"
@@ -57,6 +56,7 @@ alias crund="cargo run --release"
 alias clip="xclip -sel clip"
 
 alias starship-init="source <(/usr/local/bin/starship init zsh --print-full-init)"
+alias fzf="fzf --color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
 
 
 
