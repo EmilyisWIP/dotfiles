@@ -7,8 +7,8 @@ HIST_STAMPS="yyyy-mm-dd"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(zoxide zsh-interactive-cd zsh-autosuggestions zsh-syntax-highlighting)
-
+plugins=(zoxide  zsh-autosuggestions zsh-syntax-highlighting)
+# zsh-interactive-cd
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -30,3 +30,4 @@ export PATH="/home/subject05/.cargo/bin/:$PATH"
 export PATH="/home/subject05/Custom/Programs/:$PATH"
 
 clear;
+[[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"

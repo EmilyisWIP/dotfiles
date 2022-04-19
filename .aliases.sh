@@ -23,6 +23,7 @@
 # Navigation
 
 alias cd="cd-list"
+alias z="zd-list"
 
 
 # Configs
@@ -37,6 +38,7 @@ alias starshipcfg="xdg-open $STARSHIP_CONFIG"
 # Misc
 # alias nautilus="nautilus $(pwd)"
 
+alias echo="ansi"
 alias batcat="batcat --theme base16"
 alias bat="batcat"
 alias ls="exa --icons --group-directories-first"
@@ -95,7 +97,7 @@ $ fuck () {
                test -n "$TF_CMD" && print -s $TF_CMD
              }
 
-$ open () {
+$ edit () {
              if echo $(which $@) | grep -q "found"
                ;then echo "File \"$@\" not found"
                ;echo "Creating \"$@\""
@@ -126,15 +128,36 @@ $ which-copy () {
 
 $ cd-list() {
      if [ -z $1 ]; then
-       # echo "0 set"
-       z; ls
+        # echo "0 set"
+       if [ -d $1 ];then  \cd; ls;
+     else echo --red "No such directory";fi;
+
      elif [ ! -z $2 ]; then
-       # echo "2 set"
-       z $1  >/dev/null 2>&1 || echo "\033[0;31mNo such dir\033[0m"; ls ${@: 2};
+        # echo "2 set"
+       if [ -d $1 ];then \cd $1; ls $2;
+     else echo --red "No such directory";fi;
+
      else
-       # echo "1 set"
-       if [ -d $1 ]; then z $1  >/dev/null 2>&1; ls;
-     else z; ls $1;
-       fi
-   fi
+        # echo "1 set"
+       if [ -d $1 ]; then \cd $1; ls;
+     else echo --red "No such directory";fi;
+    fi
+           }
+
+$ zd-list() {
+   if [ -z $1 ]; then
+      # echo "0 set"
+     if [ -d $1 ];then  \cd; ls;
+   else echo --red "No such directory";fi;
+
+   elif [ ! -z $2 ]; then
+      # echo "2 set"
+     if [ -d $1 ];then \cd $1; ls $2;
+   else echo --red "No such directory";fi;
+
+   else
+      # echo "1 set"
+     if [ -d $1 ]; then \cd $1; ls;
+   else echo --red "No such directory";fi;
+  fi
            }
