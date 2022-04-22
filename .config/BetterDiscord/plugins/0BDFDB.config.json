@@ -1,8 +1,9 @@
 {
 	"all": {
-		"hashes": {
-			"0BDFDB.data.json": "e7268a45a28f93d724b71071e5b70ea13267b131",
-			"0BDFDB.raw.css": "afe854fd60051d750cebb99fb290bdce5c415f27"
+		"changeLogs": {
+			"BDFDB": "2.3.2",
+			"BetterSearchPage": "1.2.0",
+			"ImageUtilities": "4.7.1"
 		},
 		"choices": {
 			"toastPosition": "right"
@@ -13,10 +14,9 @@
 			"showSupportBadges": false,
 			"useChromium": false
 		},
-		"changeLogs": {
-			"BDFDB": "2.3.0",
-			"ImageUtilities": "4.7.1",
-			"BetterSearchPage": "1.2.0"
+		"hashes": {
+			"0BDFDB.data.json": "e7268a45a28f93d724b71071e5b70ea13267b131",
+			"0BDFDB.raw.css": "e4c60d6c209c554731852f257457346c269a3764"
 		}
 	}
 }

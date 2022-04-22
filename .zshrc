@@ -1,15 +1,18 @@
-export ZSH=$HOME/.oh-my-zsh
+plugins=(
+zoxide
+zsh-autosuggestions
+# zsh-autocomplete
+zsh-syntax-highlighting
+)
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 13
-
-HIST_STAMPS="yyyy-mm-dd"
 
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(zoxide  zsh-autosuggestions zsh-syntax-highlighting)
+source /home/subject05/.oh-my-zsh/oh-my-zsh.sh
+
 # zsh-interactive-cd
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -17,6 +20,7 @@ source $ZSH/oh-my-zsh.sh
 source /home/subject05/.aliases.sh
 source <(cod init $$ zsh)
 source <(/usr/local/bin/starship init zsh --print-full-init)
+source "$HOME/.qfc/bin/qfc.sh"
 
 cat ~/.cache/wal/dracula_seq
 
@@ -29,5 +33,7 @@ export PATH="/home/subject05/.local/bin:$PATH"
 export PATH="/home/subject05/.cargo/bin/:$PATH"
 export PATH="/home/subject05/Custom/Programs/:$PATH"
 
-clear;
-[[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"
+# clear;
+
+HIST_STAMPS="yyyy-mm-dd"
+clear

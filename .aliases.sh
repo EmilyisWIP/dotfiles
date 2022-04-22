@@ -1,29 +1,31 @@
 # Emily's aliases :>
 
-  ALIASES="/home/subject05/.aliases.sh"
-  ZSHRC="~/.zshrc"
-  BASHRC="~/.bashrc"
-  ALACRITTYCFG="~/.config/alacritty/alacritty.yml"
-  NEOFETCHCFG="~/.config/neofetch/config.conf"
-  FISHRC=".config/fish/config.fish"
-  STARSHIP_CONFIG="~/.config/starship.toml"
+ALIASES="/home/subject05/.aliases.sh"
+ZSHRC="~/.zshrc"
+BASHRC="~/.bashrc"
+ALACRITTYCFG=".config/alacritty/alacritty.yml"
+# KITTYCFG=".config/kitty/kitty.conf"
+NEOFETCHCFG="~/.config/neofetch/config.conf"
+FISHRC=".config/fish/config.fish"
+STARSHIP_CONFIG="~/.config/starship.toml"
+EDITOR="atom"
+WEZTERM_CONFIG_FILE="~/.config/wezterm/wezterm.lua"
 
 # APT-FAST, PACKAGES
-  alias update="sudo apt-fast update"
-  alias upgrade="sudo apt-fast upgrade"
-  alias aptup="sudo apt-fast update; sudo apt-fast upgrade"
-  alias aptupd="sudo apt-fast update"
-  alias aptupg="sudo apt-fast upgrade"
-  alias install="sudo apt-fast install"
-  alias reinstall="sudo apt-fast reinstall"
-  alias remove="sudo apt remove"
-  alias purge="sudo apt purge"
-  alias autoremove="sudo apt autoremove"
+alias update="sudo apt-fast update"
+alias upgrade="sudo apt-fast upgrade"
+alias aptup="sudo apt-fast update; sudo apt-fast upgrade"
+alias aptupd="sudo apt-fast update"
+alias aptupg="sudo apt-fast upgrade"
+alias install="sudo apt-fast install"
+alias reinstall="sudo apt-fast reinstall"
+alias remove="sudo apt remove"
+alias purge="sudo apt purge"
+alias autoremove="sudo apt autoremove"
 
 # Navigation
-
 alias cd="cd-list"
-alias z="zd-list"
+alias zd="zd-list"
 
 
 # Configs
@@ -31,6 +33,8 @@ alias aliases="xdg-open $ALIASES"
 alias zshrc="xdg-open $ZSHRC"
 alias bashrc="xdg-open $BASHRC"
 alias alacrittycfg="xdg-open $ALACRITTYCFG"
+alias wezcfg="xdg-open $WEZTERM_CONFIG_FILE"
+# alias kittycfg="xdg-open $KITTYCFG"
 alias neofetchcfg="xdg-open $NEOFETCHCFG"
 alias fishrc="xdg-open $FISH"
 alias starshipcfg="xdg-open $STARSHIP_CONFIG"
@@ -38,7 +42,6 @@ alias starshipcfg="xdg-open $STARSHIP_CONFIG"
 # Misc
 # alias nautilus="nautilus $(pwd)"
 
-alias echo="ansi"
 alias batcat="batcat --theme base16"
 alias bat="batcat"
 alias ls="exa --icons --group-directories-first"
@@ -58,6 +61,7 @@ alias crund="cargo run --release"
 alias clip="xclip -sel clip"
 
 alias starship-init="source <(/usr/local/bin/starship init zsh --print-full-init)"
+
 alias fzf="fzf --color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
 
 
@@ -81,83 +85,83 @@ $ gp () { git commit -m "$@" -a; push }
 # Scripts
 
 $ fuck () {
-               TF_PYTHONIOENCODING=$PYTHONIOENCODING;
-               export TF_SHELL=zsh;
-               export TF_ALIAS=fuck;
-               TF_SHELL_ALIASES=$(alias);
-               export TF_SHELL_ALIASES;
-               TF_HISTORY="$(fc -ln -10)";
-               export TF_HISTORY;
-               export PYTHONIOENCODING=utf-8;
-               TF_CMD=$(
-                   thefuck THEFUCK_ARGUMENT_PLACEHOLDER $@
-               ) && eval $TF_CMD;
-               unset TF_HISTORY;
-               export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
-               test -n "$TF_CMD" && print -s $TF_CMD
-             }
+  TF_PYTHONIOENCODING=$PYTHONIOENCODING;
+  export TF_SHELL=zsh;
+  export TF_ALIAS=fuck;
+  TF_SHELL_ALIASES=$(alias);
+  export TF_SHELL_ALIASES;
+  TF_HISTORY="$(fc -ln -10)";
+  export TF_HISTORY;
+  export PYTHONIOENCODING=utf-8;
+  TF_CMD=$(
+    thefuck THEFUCK_ARGUMENT_PLACEHOLDER $@
+  ) && eval $TF_CMD;
+  unset TF_HISTORY;
+  export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
+  test -n "$TF_CMD" && print -s $TF_CMD
+}
 
 $ edit () {
-             if echo $(which $@) | grep -q "found"
-               ;then echo "File \"$@\" not found"
-               ;echo "Creating \"$@\""
-               ;$EDITOR $@;
-             else atom_which=$(which $@)
-               ;echo "Opening file in \$PATH"
-               ;echo $atom_which
-               ;xdg-open $atom_which
-             ;fi
-             unset atom_which}
+  if echo $(which $@) | grep -q "found"
+  ;then echo "File \"$@\" not found"
+    ;echo "Creating \"$@\""
+    ;$EDITOR $@;
+  else atom_which=$(which $@)
+    ;echo "Opening file in \$PATH"
+    ;echo $atom_which
+    ;xdg-open $atom_which
+  ;fi
+unset atom_which}
 
 $ search () {
-               found=$(fd $@ | fzf -1)
-             if [ $found ]
-               ;then echo "Opening $found"
-               ;xdg-open $found
-             else echo "Query empty"
-               ;fi
-             unset found
-           }
+  found=$(fd $@ | fzf -1)
+  if [ $found ]
+  ;then echo "Opening $found"
+    ;xdg-open $found
+  else echo "Query empty"
+  ;fi
+  unset found
+}
 
 $ which-copy () {
-             if echo $(which $@) | grep -q "not found"
-               ;then echo "$@ Not found"
-             else echo $(which $@); echo $(which $@) | xclip -sel clip;fi
-           }
+  if echo $(which $@) | grep -q "not found"
+  ;then echo "$@ Not found"
+else echo $(which $@); echo $(which $@) | xclip -sel clip;fi
+}
 
 
 $ cd-list() {
-     if [ -z $1 ]; then
-        # echo "0 set"
-       if [ -d $1 ];then  \cd; ls;
-     else echo --red "No such directory";fi;
+  if [ -z $1 ]; then
+    # echo "0 set"
+    if [ -d $1 ];then  \cd; ls;
+  else ansi --red -n "➜ "; ansi --red "No such directory";fi;
 
-     elif [ ! -z $2 ]; then
-        # echo "2 set"
-       if [ -d $1 ];then \cd $1; ls $2;
-     else echo --red "No such directory";fi;
+  elif [ ! -z $2 ]; then
+    # echo "2 set"
+    if [ -d $1 ];then \cd $1; ls $2;
+  else ansi --red -n "➜ "; ansi --red "No such directory";fi;
 
-     else
-        # echo "1 set"
-       if [ -d $1 ]; then \cd $1; ls;
-     else echo --red "No such directory";fi;
-    fi
-           }
+  else
+    # echo "1 set"
+    if [ -d $1 ]; then \cd $1; ls;
+  else ansi --red -n "➜ "; ansi --red "No such directory";fi;
+  fi
+}
 
 $ zd-list() {
-   if [ -z $1 ]; then
-      # echo "0 set"
-     if [ -d $1 ];then  \cd; ls;
-   else echo --red "No such directory";fi;
+  if [ -z $1 ]; then
+    # echo "0 set"
+    if [ -d $1 ];then  \cd; ls;
+  else ansi --red "No such directory";fi;
 
-   elif [ ! -z $2 ]; then
-      # echo "2 set"
-     if [ -d $1 ];then \cd $1; ls $2;
-   else echo --red "No such directory";fi;
+  elif [ ! -z $2 ]; then
+    # echo "2 set"
+    if [ -d $1 ];then \cd $1; ls $2;
+  else ansi --red "No such directory";fi;
 
-   else
-      # echo "1 set"
-     if [ -d $1 ]; then \cd $1; ls;
-   else echo --red "No such directory";fi;
+  else
+    # echo "1 set"
+    if [ -d $1 ]; then \cd $1; ls;
+  else ansi --red "No such directory";fi;
   fi
-           }
+}

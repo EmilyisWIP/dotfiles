@@ -21,10 +21,11 @@ cursor:
   thickness: 0.2
 
 font:
-  size: 14
+  size: 16
   normal:
-    family: JetBrainsMono Nerd Font Mono
-    style: Regular
+    family: JetBrainsMono
+    # family: FiraMono
+    # style: italic
 
 key_bindings:
   - { key: Escape,                                           chars: "\u0003"              }

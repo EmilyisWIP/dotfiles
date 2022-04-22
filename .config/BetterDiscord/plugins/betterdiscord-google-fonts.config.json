@@ -640,6 +640,7 @@
         "Libre Barcode 39 Text",
         "Libre Barcode EAN13 Text",
         "Libre Baskerville",
+        "Libre Bodoni",
         "Libre Caslon Display",
         "Libre Caslon Text",
         "Libre Franklin",
@@ -1291,6 +1292,7 @@
         "Syne Tactile",
         "Tajawal",
         "Tangerine",
+        "Tapestry",
         "Taprom",
         "Tauri",
         "Taviraj",
@@ -1360,6 +1362,7 @@
         "Wallpoet",
         "Walter Turncoat",
         "Warnes",
+        "Water Brush",
         "Waterfall",
         "Wellfleet",
         "Wendy One",
@@ -1402,6 +1405,6 @@
         "Zilla Slab",
         "Zilla Slab Highlight"
     ],
-    "lastFetchTime": 1650298540752,
+    "lastFetchTime": 1650620923657,
     "font": "JetBrains Mono"
 }

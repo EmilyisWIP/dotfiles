@@ -37,9 +37,9 @@
 			"saveImage": true
 		},
 		"zoomSettings": {
+			"lensSize": 757,
 			"pixelMode": false,
-			"zoomLevel": 5.4999999999999964,
-			"lensSize": 757
+			"zoomLevel": 2.7000000000000006
 		}
 	}
 }
