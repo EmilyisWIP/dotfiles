@@ -26,7 +26,8 @@ alias autoremove="sudo apt autoremove"
 # Navigation
 alias cd="cd-list"
 alias zd="zd-list"
-
+alias z="zd-list"
+alias back="cd-list -"
 
 # Configs
 alias aliases="xdg-open $ALIASES"
@@ -131,19 +132,29 @@ else echo $(which $@); echo $(which $@) | xclip -sel clip;fi
 
 
 $ cd-list() {
+  current_path="$(pwd)"
+  new_nav="$1"
+  current_path="$current_path/"
+  new_path="$current_path$new_nav"
+  # echo $new_nav
+
+  # echo $current_path
+  # echo $new_path
+  # if [ "$new_path" != "$current_path" ]; then same="not same";echo $same; else same="";echo same;fi;
+  # echo "\$same = \"$same\""
   if [ -z $1 ]; then
     # echo "0 set"
-    if [ -d $1 ];then  \cd; ls;
+    if [ -d $1 ] || [ $1 = "-" ]; then   \cd; ls;
   else ansi --red -n "➜ "; ansi --red "No such directory";fi;
 
   elif [ ! -z $2 ]; then
     # echo "2 set"
-    if [ -d $1 ];then \cd $1; ls $2;
+    if [ -d $1 ] || [ $1 = "-" ]; then  \cd $1; ls $2;
   else ansi --red -n "➜ "; ansi --red "No such directory";fi;
 
   else
     # echo "1 set"
-    if [ -d $1 ]; then \cd $1; ls;
+    if [ -d $1 ] || [ $1 = "-" ]; then  \cd $1; ls;
   else ansi --red -n "➜ "; ansi --red "No such directory";fi;
   fi
 }
@@ -151,17 +162,38 @@ $ cd-list() {
 $ zd-list() {
   if [ -z $1 ]; then
     # echo "0 set"
-    if [ -d $1 ];then  \cd; ls;
-  else ansi --red "No such directory";fi;
+     \z; ls;
+  elif [ ! -z $2 ]; then
+    # echo "2 set"
+     \z $1; ls $2;
+  else
+    # echo "1 set"
+     \z $1; ls;
+  fi
+}
+$ ct() {
+  current_path="$(pwd)"
+  new_nav="$1"
+  current_path="$current_path/"
+  new_path="$current_path$new_nav"
+  # echo $new_nav
+
+  # echo $current_path
+  # echo $new_path
+  if [ "$new_path" != "$current_path" ]; then same="not same"; else same="";fi;
+  if [ -z $1 ]; then
+    # echo "0 set"
+    if [ -d $1 ] || [ $1 = "-" ]; then if [ ! -z $same ]; then   \cd; ls;fi;
+  else ansi --red -n "➜ "; ansi --red "No such directory";fi;
 
   elif [ ! -z $2 ]; then
     # echo "2 set"
-    if [ -d $1 ];then \cd $1; ls $2;
-  else ansi --red "No such directory";fi;
+    if [ -d $1 ] || [ $1 = "-" ]; then if [ ! -z $same ]; then  \cd $1; ls $2;fi;
+  else ansi --red -n "➜ "; ansi --red "No such directory";fi;
 
   else
     # echo "1 set"
-    if [ -d $1 ]; then \cd $1; ls;
-  else ansi --red "No such directory";fi;
+    if [ -d $1 ] || [ $1 = "-" ]; then if [ ! -z $same ]; then  \cd $1; ls;fi;
+  else ansi --red -n "➜ "; ansi --red "No such directory";fi;
   fi
 }
