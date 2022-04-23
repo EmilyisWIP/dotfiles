@@ -17,7 +17,7 @@ source /home/subject05/.oh-my-zsh/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-source /home/subject05/.aliases.sh
+source /home/subject05/.aliases
 source <(cod init $$ zsh)
 source <(/usr/local/bin/starship init zsh --print-full-init)
 source "$HOME/.qfc/bin/qfc.sh"
