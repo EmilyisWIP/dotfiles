@@ -1,3 +1,4 @@
+# Emily's zshrc :>
 plugins=(
 zoxide
 fzf-tab
@@ -8,25 +9,18 @@ zsh-syntax-highlighting
 zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 13
 
-
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
 source /home/subject05/.oh-my-zsh/oh-my-zsh.sh
 
-# zsh-interactive-cd
+source ~/.aliases
+alias aliases="xdg-open ~/.aliases"
+alias zshrc="xdg-open ~/.zshrc"
 
-# User configuration
-ALIASES="/home/subject05/.aliases.sh"
-alias aliases="xdg-open $ALIASES"
-ZSHRC="~/.zshrc"
-alias zshrc="xdg-open $ZSHRC"
-source $ALIASES
-source <(cod init $$ zsh)
 source <(/usr/local/bin/starship init zsh --print-full-init)
-source "$HOME/.qfc/bin/qfc.sh"
+(cat ~/.cache/wal/sequences &)
 
+source <(cod init $$ zsh)
+# source ~/.cache/wal/colors-tty.sh
 # (cat ~/.cache/wal/dracula_seq &)
-
 
 bindkey '^[[1;5D' emacs-backward-word
 bindkey '^[[1;5C' emacs-forward-word
