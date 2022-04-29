@@ -23,5 +23,5 @@
     "cui.userAreaButtonActive": "true",
     "cui.msgBarButtonActive": "true",
     "cui.callContainerButtonActive": "true",
-    "cui.membersListButtonActive": "true"
+    "cui.membersListButtonActive": "false"
 }
