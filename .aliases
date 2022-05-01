@@ -1,12 +1,13 @@
+#!/usr/bin/env zsh
 # Emily's aliases :>
 
 # Variables
-
 zshrc="~/.zshrc"
 fishrc="~/.config/fish/config.fish"
 nurc="$nu.config-path"
 bashrc="~/.bashrc"
 
+aliases_file="~/.aliases"
 cfg_alacritty="~/.config/alacritty/alacritty.yml"
 cfg_neofetch="~/.config/neofetch/config.conf"
 cfg_starship="~/.config/starship.toml"
@@ -19,7 +20,7 @@ alias fishrc="xdg-open $fishrc"
 alias nurc="xdg-open $nurc"
 alias bashrc="xdg-open $bashrc"
 
-alias aliases=     "xdg-open ~/.aliases"
+alias aliases="xdg-open $aliases_file"
 alias alacrittycfg="xdg-open $cfg_alacritty"
 alias neofetchcfg= "xdg-open $cfg_neofetch"
 alias starshipcfg= "xdg-open $cfg_starship"
@@ -28,22 +29,18 @@ alias starshipcfg= "xdg-open $cfg_starship"
 
 
 
-
-
-
-
-
 # APT-FAST, PACKAGES
-alias update="sudo apt-fast update"
-alias upgrade="sudo apt-fast upgrade"
-alias aptup="sudo apt-fast update; sudo apt-fast upgrade"
-alias aptupd="sudo apt-fast update"
-alias aptupg="sudo apt-fast upgrade"
-alias install="sudo apt-fast install"
-alias reinstall="sudo apt-fast reinstall"
-alias remove="sudo apt remove"
-alias purge="sudo apt purge"
-alias autoremove="sudo apt autoremove"
+alias update="sudo nala update"
+alias upgrade="sudo nala upgrade"
+alias aptup="sudo nala update; sudo nala upgrade"
+alias aptupd="sudo nala update"
+alias aptupg="sudo nala upgrade"
+alias install="sudo nala install"
+alias reinstall="sudo nala reinstall"
+alias remove="sudo nala remove"
+alias purge="sudo nala purge"
+alias autoremove="sudo nala autoremove"
+alias clean="sudo nala clean"
 
 # Navigation
 alias cd="cd-list"
@@ -51,20 +48,19 @@ alias zd="zd-list"
 alias z="zd-list"
 
 
+
 # Misc
-# alias nautilus="nautilus $(pwd)"
 alias atom="atom --no-sandbox"
 editor="atom --no-sandbox"
 alias bat="batcat --theme base16"
 alias ls="exa --icons --group-directories-first"
 alias ll="exa -1"
+alias exa="\exa --icons --group-directories-first"
 alias py="python3"
-alias fd="fd -IiH"
+# alias fd="fd -IiH"
 alias img="eog"
-alias disk="duf"
 alias chrome="/usr/bin/google-chrome-stable --enable-features=WebUIDarkMode --force-dark-mode %U"
 alias modpack="cmpdl"
-
 
 alias crun="cargo run -q --release"
 alias crund="cargo run --release"
@@ -93,6 +89,7 @@ $ gp () { git commit -m "$@" -a; push }
 
 
 # Scripts
+set search-exclude="-E ~/.steam -E .local/share/Trash/ -E ./.git"
 
 $ edit () {
   if echo $(which $@) | grep -q "found"
@@ -105,16 +102,46 @@ $ edit () {
     ;xdg-open $atom_which
   ;fi
 unset atom_which}
-
-$ search () {
-  found=$(fd $@ | fzf -1)
+#
+# $ search () {
+#   found=$(fd --min-depth 1 $@ | fzf --height 40% --reverse ) || ansic --red "➜ No input"
+#   if [ $found ]
+#   ;then echo "Opening $found"
+#     ;xdg-open $found
+#   ;fi
+# }
+#
+# $ search-file () {
+#   found=$(fd --min-depth 1 -E ~/.steam -E .local/share/Trash/ -E ./.git --type f $@ | fzf --height 40% --reverse --preview 'batcat --style=numbers --color=always --line-range :500 {}')  || ansic --red "➜ No input"
+#   if [ $found ]
+#   ;then echo "Opening $found"
+#     ;xdg-open $found
+#   ;fi
+# }
+#
+$ search-dir () {
+  found=$(fd --min-depth 1 --type d $@ | fzf --height 40% --reverse) || ansic --red "➜ No input"
   if [ $found ]
-  ;then echo "Opening $found"
-    ;xdg-open $found
-  else echo "Query empty"
+  ;then
+    cd $found
   ;fi
-  unset found
 }
+$ search-dir-all () {
+  found=$(fd -a --min-depth 1 -E ~/.steam -E .local/share/Trash/ -E ./.git --type d $@ | fzf --height 40% --reverse) || ansic --red "➜ No input"
+  if [ $found ]
+  ;then
+    cd $found
+  ;fi
+}
+
+
+
+
+
+
+
+
+
 
 $ which-copy () {
   if echo $(which $@) | grep -q "not found"

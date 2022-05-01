@@ -796,6 +796,7 @@
         "Notable",
         "Nothing You Could Do",
         "Noticia Text",
+        "Noto Emoji",
         "Noto Kufi Arabic",
         "Noto Music",
         "Noto Naskh Arabic",
@@ -1406,6 +1407,6 @@
         "Zilla Slab",
         "Zilla Slab Highlight"
     ],
-    "lastFetchTime": 1651149230984,
+    "lastFetchTime": 1651321452942,
     "font": "JetBrains Mono"
 }

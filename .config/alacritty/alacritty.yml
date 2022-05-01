@@ -28,7 +28,7 @@ font:
     # style: italic
 
 key_bindings:
-  - { key: Escape,                                           chars: "\u0003"              }
+  - { key: Escape,    mode: ~Search,                         chars: "\u0003"              }
   - { key: V,         mods: Control,                         action: Paste                }
   - { key: C,         mods: Control,                         action: Copy                 }
   - { key: C,         mods: Control|Shift,                   chars: "\u0003"              }
@@ -36,34 +36,22 @@ key_bindings:
   - { key: Back,      mods: Control,                         chars: "\x17"                }
   - { key: Key1,      mods: Control,                         action: IncreaseFontSize     }
   - { key: Key2,      mods: Control,                         action: DecreaseFontSize     }
-  - { key: Escape,    mode: Search,                          action: SearchCancel         }
-  # - { key: S,         mods: Control,       mode: ~Search,    action: Search               }
+  - { key: F,         mode: Search, mods: Control|Shift,     action: SearchCancel         }
+  # - { key: S,       mods: Control,       mode: ~Search,    action: Search               }
 #  - { key: Left,      mods: Alt,                             chars: "\x1bb"               } # one word left
 #  - { key: Right,     mods: Alt,                             chars: "\x1bc"               } # one word right
 
-env:
-  TERM: xterm-256color
-
-colors:
-  primary:
-   background: '#1d1f21'
-   foreground: '#c5c8c6'
-  cursor:
-      text: CellBackground
-      cursor: CellForeground
-  search:
-    matches:
-      foreground: '#44475a'
-      background: '#50fa7b'
-    focused_match:
-      foreground: '#44475a'
-      background: '#ffb86c'
-    bar:
-      background: '#44475a'
-      foreground: '#f8f8f2'
-  # line_indicator:
-    # foreground: '#323232'
-    # background: '#323232'
-  selection:
-    text: CellForeground
-    background: '#44475a'
+# env:
+#   TERM: xterm-256color
+#
+# colors:
+#   cursor:
+#       text:  '#1d1f21'
+#       cursor: '#c5c8c6'
+#   search:
+#     matches:
+#       foreground: '#44475a'
+#       background: '#50fa7b'
+#     focused_match:
+#       foreground: '#44475a'
+#       background: '#ffb86c'
