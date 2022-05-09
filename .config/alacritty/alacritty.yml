@@ -37,6 +37,7 @@ key_bindings:
   - { key: Key1,      mods: Control,                         action: IncreaseFontSize     }
   - { key: Key2,      mods: Control,                         action: DecreaseFontSize     }
   - { key: F,         mode: Search, mods: Control|Shift,     action: SearchCancel         }
+  - { key: D,         mods: Control,                         chars: ""              }
   # - { key: S,       mods: Control,       mode: ~Search,    action: Search               }
 #  - { key: Left,      mods: Alt,                             chars: "\x1bb"               } # one word left
 #  - { key: Right,     mods: Alt,                             chars: "\x1bc"               } # one word right

@@ -1136,6 +1136,7 @@
         "Road Rage",
         "Roboto",
         "Roboto Condensed",
+        "Roboto Flex",
         "Roboto Mono",
         "Roboto Serif",
         "Roboto Slab",
@@ -1407,6 +1408,6 @@
         "Zilla Slab",
         "Zilla Slab Highlight"
     ],
-    "lastFetchTime": 1651494580488,
+    "lastFetchTime": 1652104287731,
     "font": "JetBrains Mono"
 }

@@ -32,25 +32,23 @@ alias starshipcfg= "xdg-open $cfg_starship"
 # APT-FAST, PACKAGES
 alias update="sudo nala update"
 alias upgrade="sudo nala upgrade"
-alias aptup="sudo nala update; sudo nala upgrade"
-alias aptupd="sudo nala update"
-alias aptupg="sudo nala upgrade"
 alias install="sudo nala install"
-alias reinstall="sudo nala reinstall"
+alias reinstall="sudo apt reinstall"
 alias remove="sudo nala remove"
 alias purge="sudo nala purge"
 alias autoremove="sudo nala autoremove"
 alias clean="sudo nala clean"
 
 # Navigation
-alias cd="cd-list"
+alias cd="zd-list"
 alias zd="zd-list"
-alias z="zd-list"
+# alias z="zd-list"
 
 
 
 # Misc
 alias atom="atom --no-sandbox"
+alias emacs="emacsclient -c -a 'emacs'"
 editor="atom --no-sandbox"
 alias bat="batcat --theme base16"
 alias ls="exa --icons --group-directories-first"
@@ -68,7 +66,7 @@ alias crund="cargo run --release"
 alias clipboard="xclip -sel clip"
 
 alias starship-zsh="source <(/usr/local/bin/starship init zsh --print-full-init)"
-
+alias fast="fast --single-line -u"
 
 
 
@@ -86,7 +84,7 @@ alias dracula="wal -q --theme dracula"
 $ commit () { git commit -m "$@" -a }
 $ push () { git push }
 $ gp () { git commit -m "$@" -a; push }
-
+$ backup () { ln  }
 
 # Scripts
 set search-exclude="-E ~/.steam -E .local/share/Trash/ -E ./.git"
@@ -102,23 +100,7 @@ $ edit () {
     ;xdg-open $atom_which
   ;fi
 unset atom_which}
-#
-# $ search () {
-#   found=$(fd --min-depth 1 $@ | fzf --height 40% --reverse ) || ansic --red "➜ No input"
-#   if [ $found ]
-#   ;then echo "Opening $found"
-#     ;xdg-open $found
-#   ;fi
-# }
-#
-# $ search-file () {
-#   found=$(fd --min-depth 1 -E ~/.steam -E .local/share/Trash/ -E ./.git --type f $@ | fzf --height 40% --reverse --preview 'batcat --style=numbers --color=always --line-range :500 {}')  || ansic --red "➜ No input"
-#   if [ $found ]
-#   ;then echo "Opening $found"
-#     ;xdg-open $found
-#   ;fi
-# }
-#
+
 $ search-dir () {
   found=$(fd --min-depth 1 --type d $@ | fzf --height 40% --reverse) || ansic --red "➜ No input"
   if [ $found ]
@@ -133,14 +115,6 @@ $ search-dir-all () {
     cd $found
   ;fi
 }
-
-
-
-
-
-
-
-
 
 
 $ which-copy () {
@@ -180,3 +154,37 @@ $ zd-list() {
     \z $1; ls;
   fi
 }
+
+
+
+
+
+fda() {
+  dir=$(fd -E .git -E .steam -E ./.local/share/Trash/ -IHL --type d --min-depth 1 . | fzf --height 40% --reverse --preview='exa --icons --group-directories-first -1 {}');
+  if [ ! -z $dir ]; then cd "$dir";fi
+  zle reset-prompt
+}
+zle     -N             fda
+bindkey -M emacs '\ec' fda
+
+cdf() {
+   file=$(fzf +m -q "$1") && dir=$(dirname "$file") && cd "$dir"
+   zle reset-prompt
+}
+
+ffa() {
+  dir=$(fd -E .git -E .steam -E ./.local/share/Trash/ -IHL --type f --min-depth 1 . | fzf --height 40% --reverse --preview='batcat --style=numbers --color=always --line-range :500 --theme base16 {}');
+  cd $dir
+  echo $dir
+  # zle reset-prompt
+}
+
+
+fh() {
+     print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf --height 40% --reverse --cycle --preview='echo {}' --preview-window=down:2:wrap | sed -E 's/ *[0-9]*\*? *//' | sed -E 's/\\/\\\\/g');
+     # zle reset-prompt
+     # printf '\n'
+     # print -z "test"
+}
+zle     -N             fh
+bindkey -M emacs '\er' fh
