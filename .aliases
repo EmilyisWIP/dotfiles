@@ -89,16 +89,10 @@ alias dracula="wal -q --theme dracula"
 $ commit () { git commit -m "$@" -a }
 $ push () { git push }
 $ gp () { git commit -m "$@" -a; push }
-$ backup () {
-        if [ -z $1 ];then error-message "No file/dir chosen";
-      elif [ -d $1 ] || [ -f $1 ]; then
-              ln -d $1 ~/backups/
-              success-message "Succesfully added $1 to the ~/backups folder"
-      else error-message error;
-;fi}
 
 
 # Scripts
+
 set search-exclude="-E ~/.steam -E .local/share/Trash/ -E ./.git"
 
 $ edit () {
