@@ -67,7 +67,9 @@ alias clipboard="xclip -sel clip"
 
 alias starship-zsh="source <(/usr/local/bin/starship init zsh --print-full-init)"
 alias fast="fast --single-line -u"
-
+$ error-message () { ansic --red "$1" }
+$ success-message () { ansic --green "$1" }
+$ info-message () { ansic --green "$1" }
 
 
 
@@ -80,11 +82,21 @@ alias palette="wal --preview -i $(gsettings get org.gnome.desktop.background pic
 alias abstract="wal -q -i Pictures/Wallpapers/abstract.jpg"
 alias dracula="wal -q --theme dracula"
 
+
+
+
 # Git
 $ commit () { git commit -m "$@" -a }
 $ push () { git push }
 $ gp () { git commit -m "$@" -a; push }
-$ backup () { ln  }
+$ backup () {
+        if [ -z $1 ];then error-message "No file/dir chosen";
+      elif [ -d $1 ] || [ -f $1 ]; then
+              ln -d $1 ~/backups/
+              success-message "Succesfully added $1 to the ~/backups folder"
+      else error-message error;
+;fi}
+
 
 # Scripts
 set search-exclude="-E ~/.steam -E .local/share/Trash/ -E ./.git"
