@@ -1,6 +1,6 @@
 {
     "currentVersionInfo": {
-        "version": "5.0.2",
+        "version": "5.1.5",
         "hasShownChangelog": true
     },
     "disableTransitions": "false",
@@ -27,5 +27,6 @@
     "channelListWidth": "0",
     "enableFullToolbarCollapse": "false",
     "dynamicUncollapseEnabled": "true,true,true,true,true,true,true",
-    "toolbarMaxWidth": "800"
+    "toolbarMaxWidth": "800",
+    "cui.windowBarButtonActive": "true"
 }
