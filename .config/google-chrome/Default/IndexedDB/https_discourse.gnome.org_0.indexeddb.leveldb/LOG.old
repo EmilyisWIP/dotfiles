@@ -1,0 +1,6 @@
+2022/04/15-14:34:49.248 7f57 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_discourse.gnome.org_0.indexeddb.leveldb since it was missing.
+2022/04/15-14:34:49.250 7f57 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_discourse.gnome.org_0.indexeddb.leveldb/MANIFEST-000001
+2022/04/15-14:35:39.039 7f58 Level-0 table #5: started
+2022/04/15-14:35:39.040 7f58 Level-0 table #5: 61083 bytes OK
+2022/04/15-14:35:39.041 7f58 Delete type=0 #3
+2022/04/15-14:35:39.041 7f58 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

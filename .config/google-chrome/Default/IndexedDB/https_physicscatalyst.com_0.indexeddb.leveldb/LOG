@@ -1,0 +1,6 @@
+2022/01/03-22:09:04.043 54031 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_physicscatalyst.com_0.indexeddb.leveldb since it was missing.
+2022/01/03-22:09:04.050 54031 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_physicscatalyst.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/01/03-22:33:53.139 54bf3 Level-0 table #5: started
+2022/01/03-22:33:53.140 54bf3 Level-0 table #5: 1749 bytes OK
+2022/01/03-22:33:53.141 54bf3 Delete type=0 #3
+2022/01/03-22:33:53.141 54bf3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,6 @@
+2021/12/17-09:38:47.444 8c8f9 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_gsobrance.edupage.org_0.indexeddb.leveldb since it was missing.
+2021/12/17-09:38:47.446 8c8f9 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_gsobrance.edupage.org_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/17-09:51:41.845 8c9fd Level-0 table #5: started
+2021/12/17-09:51:41.845 8c9fd Level-0 table #5: 1299 bytes OK
+2021/12/17-09:51:41.846 8c9fd Delete type=0 #3
+2021/12/17-09:51:41.846 8c9fd Manual compaction at level-0 from (begin) .. (end); will stop at (end)

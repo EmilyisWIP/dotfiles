@@ -1,0 +1,18 @@
+2021/10/31-21:34:45.419 22b01 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_anchor.fm_0.indexeddb.leveldb since it was missing.
+2021/10/31-21:34:45.421 22b01 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_anchor.fm_0.indexeddb.leveldb/MANIFEST-000001
+2021/10/31-21:34:45.441 22bfc Level-0 table #5: started
+2021/10/31-21:34:45.442 22bfc Level-0 table #5: 548 bytes OK
+2021/10/31-21:34:45.443 22bfc Delete type=0 #3
+2021/10/31-21:34:45.443 22bfc Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/10/31-21:35:42.623 22bfb Level-0 table #7: started
+2021/10/31-21:35:42.625 22bfb Level-0 table #7: 6140 bytes OK
+2021/10/31-21:35:42.625 22bfb Delete type=0 #4
+2021/10/31-21:35:42.626 22bfb Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/10/31-21:35:42.626 22bfb Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x03\x01\x02\x01\x15\x00o\x00p\x00t\x00i\x00m\x00i\x00z\x00e\x00l\x00y\x00_\x00p\x00a\x00r\x00t\x00n\x00e\x00r\x00_\x00i\x00d' @ 280 : 1
+2021/10/31-21:35:42.626 22bfb Compacting 1@1 + 1@2 files
+2021/10/31-21:35:42.627 22bfb Generated table #8@1: 76 keys, 1574 bytes
+2021/10/31-21:35:42.627 22bfb Compacted 1@1 + 1@2 files => 1574 bytes
+2021/10/31-21:35:42.627 22bfb compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/10/31-21:35:42.628 22bfb Delete type=2 #7
+2021/10/31-21:35:42.628 22bfb Delete type=2 #5
+2021/10/31-21:35:42.628 22bfb Manual compaction at level-1 from '\x00\x03\x01\x02\x01\x15\x00o\x00p\x00t\x00i\x00m\x00i\x00z\x00e\x00l\x00y\x00_\x00p\x00a\x00r\x00t\x00n\x00e\x00r\x00_\x00i\x00d' @ 280 : 1 .. (end); will stop at (end)

@@ -1,0 +1,30 @@
+2021/11/01-15:14:51.506 14217 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_aesthetics.fandom.com_0.indexeddb.leveldb since it was missing.
+2021/11/01-15:14:51.512 14217 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_aesthetics.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/11/01-15:19:25.660 145d5 Level-0 table #5: started
+2021/11/01-15:19:25.672 145d5 Level-0 table #5: 888595 bytes OK
+2021/11/01-15:19:25.673 145d5 Delete type=0 #3
+2021/11/01-19:16:15.375 21f62 Level-0 table #7: started
+2021/11/01-19:16:15.392 21f62 Level-0 table #7: 854109 bytes OK
+2021/11/01-19:16:15.394 21f62 Delete type=0 #4
+2021/11/01-19:16:15.799 21996 Compacting 1@1 + 1@2 files
+2021/11/01-19:16:15.823 21996 Generated table #8@1: 161 keys, 11365 bytes
+2021/11/01-19:16:15.823 21996 Compacted 1@1 + 1@2 files => 11365 bytes
+2021/11/01-19:16:15.823 21996 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/01-19:17:56.811 21996 Level-0 table #10: started
+2021/11/01-19:17:56.831 21996 Level-0 table #10: 835175 bytes OK
+2021/11/01-19:17:56.833 21996 Delete type=2 #7
+2021/11/01-19:17:56.833 21996 Delete type=2 #5
+2021/11/01-19:17:56.833 21996 Delete type=0 #6
+2021/11/01-19:18:00.963 21f62 Compacting 1@1 + 1@2 files
+2021/11/01-19:18:00.970 21f62 Generated table #11@1: 184 keys, 11481 bytes
+2021/11/01-19:18:00.970 21f62 Compacted 1@1 + 1@2 files => 11481 bytes
+2021/11/01-19:18:00.971 21f62 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/01-19:18:00.971 21f62 Delete type=2 #10
+2021/11/01-19:18:00.971 21f62 Delete type=2 #8
+2021/11/01-19:27:31.294 2ef5d Level-0 table #13: started
+2021/11/01-19:27:31.308 2ef5d Level-0 table #13: 830760 bytes OK
+2021/11/01-19:27:31.309 2ef5d Delete type=0 #9
+2021/11/01-19:27:31.511 2ef3b Compacting 1@1 + 1@2 files
+2021/11/01-19:27:31.519 2ef3b Generated table #14@1: 203 keys, 14577 bytes
+2021/11/01-19:27:31.519 2ef3b Compacted 1@1 + 1@2 files => 14577 bytes
+2021/11/01-19:27:31.520 2ef3b compacted to: files[ 0 0 1 0 0 0 0 ]

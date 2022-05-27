@@ -1,0 +1,6 @@
+2021/10/16-13:41:13.733 6e78 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.minecraft.net_0.indexeddb.leveldb since it was missing.
+2021/10/16-13:41:13.736 6e78 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.minecraft.net_0.indexeddb.leveldb/MANIFEST-000001
+2021/10/16-13:42:35.381 6fd8 Level-0 table #5: started
+2021/10/16-13:42:35.382 6fd8 Level-0 table #5: 6843 bytes OK
+2021/10/16-13:42:35.384 6fd8 Delete type=0 #3
+2021/10/16-13:42:35.384 6fd8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

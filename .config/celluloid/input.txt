@@ -1,0 +1,10 @@
+RIGHT  seek  5
+LEFT   seek -5
+Ctrl+RIGHT  seek  10
+Ctrl+LEFT   seek -10
+UP add volume +2
+DOWN add volume -2
+m cycle mute
+s cycle sub-visibility
+Alt+UP add sub-pos  1
+Alt+DOWN add sub-pos -1

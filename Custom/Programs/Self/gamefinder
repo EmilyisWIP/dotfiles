@@ -1,0 +1,76 @@
+#!/usr/bin/env python
+import os
+from sys import exit
+import fnmatch
+from colorama import Fore, Back, Style
+
+
+#tweak
+home_folder = "subject05"
+blacklist = ["The Binding of Isaac"]
+
+
+#unchanging
+path = r'/home/' + home_folder + '/.local/share/applications/Games/'
+games_folder = '/home/' + home_folder + '/Games/'
+
+
+print("Game directory: ", games_folder + "\n")
+
+def folder_counting():
+    FolderCount = 0
+    for folders in os.listdir(games_folder):
+        FolderCount += 1
+    print(Fore.YELLOW + 'Folder count: ', FolderCount, Style.RESET_ALL)
+folder_counting()
+
+def startsh_counting():
+    GameCount = 0
+    for dirpath, dirs, files in os.walk(games_folder):
+        for game in fnmatch.filter(files, 'start.sh'):
+            #print(os.path.join(dirpath, game))
+            GameCount += 1
+    print(Fore.GREEN + 'Game count: ', GameCount, Style.RESET_ALL)
+startsh_counting()
+
+def blacklist_counting():
+    BlackListCount = 0
+    for dirpath, dirs, files in os.walk(games_folder):
+        for game in fnmatch.filter(files, 'start.sh'):
+            game = dirpath.replace("/home/subject05/Games/" , "")
+            if game in blacklist:
+                BlackListCount += 1
+    print(Fore.RED + 'Blacklisted games count: ', BlackListCount, Style.RESET_ALL, "\n")
+blacklist_counting()
+
+
+def desktop():
+    GameCount = 0
+    for dirpath, dirs, files in os.walk(games_folder):
+        for start_sh in fnmatch.filter(files, 'start.sh'):
+            GameCount += 1
+
+            game = dirpath.replace("/home/subject05/Games/" , "")
+
+            if game in blacklist:
+                print(Fore.RED + "BLACKLISTED: ",game, Style.RESET_ALL )
+            else:
+                print("Found:", game)
+
+            file = game + '.desktop'
+            file = file.replace(' ','-')
+            executable = games_folder + game + '/start.sh'
+            icon_temp = str.lower(game)
+            icon = icon_temp.replace(' ', '-')
+
+            if game not in blacklist:
+                with open(os.path.expanduser(path + file), 'w') as fp:
+                    fp.write('[Desktop Entry]' + '\n')
+                    fp.write('Name=' + game + '\n')
+                    fp.write('Comment=Play ' + game + '\n')
+                    fp.write('Exec=' + "\"" + executable + "\"" + '\n')
+                    fp.write('Icon=' + icon + '\n')
+                    fp.write('Terminal=false' + '\n')
+                    fp.write('Type=Application' + '\n')
+                    fp.write('Hidden=false' + '\n')
+desktop()

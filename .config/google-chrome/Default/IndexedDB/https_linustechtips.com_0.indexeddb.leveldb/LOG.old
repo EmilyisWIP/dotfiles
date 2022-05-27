@@ -1,0 +1,15 @@
+2022/03/02-15:15:28.635 24ba9 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_linustechtips.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/02-15:15:28.636 24ba9 Recovering log #7
+2022/03/02-15:15:28.636 24ba9 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_linustechtips.com_0.indexeddb.leveldb/000007.log 
+2022/03/02-15:15:33.034 24690 Level-0 table #12: started
+2022/03/02-15:15:33.036 24690 Level-0 table #12: 646 bytes OK
+2022/03/02-15:15:33.038 24690 Delete type=0 #7
+2022/03/02-15:15:33.038 24690 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/03/02-15:15:33.038 24690 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x09\x00m\x00e\x00m\x00b\x00e\x00r\x00_\x00i\x00d' @ 101 : 1
+2022/03/02-15:15:33.038 24690 Compacting 1@1 + 1@2 files
+2022/03/02-15:15:33.042 24690 Generated table #13@1: 23 keys, 605 bytes
+2022/03/02-15:15:33.042 24690 Compacted 1@1 + 1@2 files => 605 bytes
+2022/03/02-15:15:33.043 24690 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/03/02-15:15:33.044 24690 Delete type=2 #12
+2022/03/02-15:15:33.044 24690 Delete type=2 #9
+2022/03/02-15:15:33.044 24690 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x09\x00m\x00e\x00m\x00b\x00e\x00r\x00_\x00i\x00d' @ 101 : 1 .. (end); will stop at (end)

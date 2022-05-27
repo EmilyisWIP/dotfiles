@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Author: [Dmitry](http://dmi3.net) [Source](https://github.com/dmi3/bin)
+# Emily made it better :>
+#Enhanced with <3
+
+APPID=$(cat ~/Custom/keys/wolfram 2>/dev/null) # Get one at https://products.wolframalpha.com/api/
+
+image="nohup eog "
+BG="white"
+FG="black"
+test "$APPID" == "" && echo "\$APPID not set in ${BASH_SOURCE[0]}"
+
+case "$1" in
+
+-h )
+    echo "  Wolfram alpha script, enhanced by Emily"
+    echo "  Usage: wf {command} or wf --no-image {} for text answers"
+    echo "  wf --image {command}, to show more complex answers"
+    echo "  wf --help or wf -h, to show this message"
+
+    echo "";;
+
+
+--help )
+    echo "  Wolfram alpha script, enhanced by Emily"
+    echo "  Usage: wf {command} or wf --no-image {} for text answers"
+    echo "  wf --image {command}, to show more complex answers"
+    echo "  wf --help or wf -h, to show this message"
+
+    echo "";;
+
+
+
+--image)
+     echo "Downloading full answer..."
+
+
+    #echo "\"https://api.wolframalpha.com/v1/result?appid=$APPID&units=metric&foreground=$FG&background=$BG\" --data-urlencode \"i=${@: 2:3}\" --output /tmp/wolfram"
+
+     curl -s "https://api.wolframalpha.com/v1/simple?appid=$APPID&units=metric&foreground=$FG&background=$BG" --data-urlencode "i=$2 $3 $4 $5 $6 $7 $8" --output /tmp/wolfram
+     $image /tmp/wolfram  > /dev/null 2>&1 & ;;
+
+--no-image)
+    RESPONSE=$(curl -s "https://api.wolframalpha.com/v1/result?appid=$APPID&units=metric&" --data-urlencode "i=${@: 2}")
+    echo $RESPONSE
+    test "No short answer available" = "$RESPONSE"\
+        && echo "Downloading full answer..."\
+        && curl -s "https://api.wolframalpha.com/v1/simple?appid=$APPID&units=metric&foreground=$FG&background=$BG" --data-urlencode "i=$*";;
+
+
+*)
+    RESPONSE=$(curl -s "https://api.wolframalpha.com/v1/result?appid=$APPID&units=metric&" --data-urlencode "i=$*")
+    echo $RESPONSE
+    test "No short answer available" = "$RESPONSE"\
+        && echo "Downloading full answer..."\
+        && curl -s "https://api.wolframalpha.com/v1/simple?appid=$APPID&units=metric&foreground=$FG&background=$BG" --data-urlencode "i= $*";
+
+
+
+
+
+esac
+shift

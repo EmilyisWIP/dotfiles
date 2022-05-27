@@ -1,0 +1,6 @@
+2021/11/06-00:06:10.234 b934d Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_beebom.com_0.indexeddb.leveldb since it was missing.
+2021/11/06-00:06:10.238 b934d Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_beebom.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/11/06-00:08:40.536 b94a7 Level-0 table #5: started
+2021/11/06-00:08:40.539 b94a7 Level-0 table #5: 13212 bytes OK
+2021/11/06-00:08:40.541 b94a7 Delete type=0 #3
+2021/11/06-00:08:40.541 b94a7 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

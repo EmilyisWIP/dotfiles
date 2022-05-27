@@ -1,0 +1,15 @@
+2022/05/10-13:55:09.725 15823 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_photos.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/05/10-13:55:09.726 15823 Recovering log #23
+2022/05/10-13:55:09.726 15823 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_photos.google.com_0.indexeddb.leveldb/000023.log 
+2022/05/10-13:55:41.739 15823 Level-0 table #28: started
+2022/05/10-13:55:41.740 15823 Level-0 table #28: 209 bytes OK
+2022/05/10-13:55:41.741 15823 Delete type=0 #23
+2022/05/10-13:55:41.741 15823 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/05/10-13:55:41.741 15823 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 233 : 1
+2022/05/10-13:55:41.741 15823 Compacting 1@1 + 1@2 files
+2022/05/10-13:55:41.742 15823 Generated table #29@1: 36 keys, 2466 bytes
+2022/05/10-13:55:41.742 15823 Compacted 1@1 + 1@2 files => 2466 bytes
+2022/05/10-13:55:41.743 15823 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/05/10-13:55:41.743 15823 Delete type=2 #28
+2022/05/10-13:55:41.743 15823 Delete type=2 #25
+2022/05/10-13:55:41.743 15823 Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 233 : 1 .. (end); will stop at (end)

@@ -1,0 +1,106 @@
+{
+	"window-size": {
+		"width": 942,
+		"height": 1002
+	},
+	"url": "https://music.youtube.com/watch?v=dfSr0b0eFmo&list=RDAMPLOLAK5uy_nibfJQyqTDTaLB90MhtF9hgXNvpOwsCRc&index=0",
+	"options": {
+		"tray": false,
+		"appVisible": true,
+		"autoUpdates": true,
+		"hideMenu": true,
+		"startAtLogin": false,
+		"disableHardwareAcceleration": false,
+		"restartOnConfigChanges": false,
+		"trayClickPlayPause": false,
+		"autoResetAppCache": false,
+		"resumeOnStart": false,
+		"proxy": "",
+		"removeUpgradeButton": true,
+		"hideMenuWarned": true
+	},
+	"plugins": {
+		"navigation": {
+			"enabled": true
+		},
+		"adblocker": {
+			"enabled": true,
+			"cache": true,
+			"additionalBlockLists": []
+		},
+		"shortcuts": {
+			"enabled": true,
+			"overrideMediaKeys": false
+		},
+		"downloader": {
+			"enabled": false,
+			"ffmpegArgs": []
+		},
+		"last-fm": {
+			"enabled": true,
+			"api_root": "http://ws.audioscrobbler.com/2.0/",
+			"api_key": "04d76faaac8726e60988e14c105d421a",
+			"secret": "a5d2a36fdf64819290f6982481eaffa2",
+			"token": "5CJfwrzrrNeqwd1qAcbaME5tYXasb2Fs",
+			"session_key": "hIAweSnzwYyI0hvgPv7vnzvzqs9ktBrm"
+		},
+		"discord": {
+			"enabled": true,
+			"activityTimoutEnabled": true,
+			"activityTimoutTime": 600000,
+			"listenAlong": true
+		},
+		"notifications": {
+			"enabled": false,
+			"unpauseNotification": false,
+			"urgency": "normal",
+			"interactive": false
+		},
+		"precise-volume": {
+			"enabled": true,
+			"steps": 1,
+			"arrowsShortcut": true,
+			"globalShortcuts": {
+				"volumeUp": "",
+				"volumeDown": ""
+			},
+			"savedVolume": 100
+		},
+		"sponsorblock": {
+			"enabled": false,
+			"apiURL": "https://sponsor.ajay.app",
+			"categories": [
+				"sponsor",
+				"intro",
+				"outro",
+				"interaction",
+				"selfpromo",
+				"music_offtopic"
+			]
+		},
+		"video-toggle": {
+			"enabled": false,
+			"forceHide": false,
+			"hideVideo": false
+		},
+		"blur-nav-bar": {
+			"enabled": true
+		},
+		"in-app-menu": {
+			"enabled": false
+		},
+		"quality-changer": {
+			"enabled": false
+		}
+	},
+	"__internal__": {
+		"migrations": {
+			"version": "1.16.0"
+		}
+	},
+	"window-position": {
+		"x": 12,
+		"y": 78
+	},
+	"window-maximized": true
+}

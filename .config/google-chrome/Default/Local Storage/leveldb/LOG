@@ -1,0 +1,26 @@
+2022/05/27-23:18:13.631 5 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
+2022/05/27-23:18:13.633 5 Recovering log #4434
+2022/05/27-23:18:13.633 5 Reusing old log /home/subject05/.config/google-chrome/Default/Local Storage/leveldb/004434.log 
+2022/05/27-23:37:19.288 5 Level-0 table #4438: started
+2022/05/27-23:37:19.293 5 Level-0 table #4438: 24122 bytes OK
+2022/05/27-23:37:19.295 5 Delete type=0 #4434
+2022/05/27-23:47:19.275 5 Level-0 table #4440: started
+2022/05/27-23:47:19.282 5 Level-0 table #4440: 96881 bytes OK
+2022/05/27-23:47:19.284 5 Delete type=0 #4437
+2022/05/27-23:47:19.285 5 Compacting 4@0 + 5@1 files
+2022/05/27-23:47:19.310 5 Generated table #4441@0: 3015 keys, 2325950 bytes
+2022/05/27-23:47:19.332 5 Generated table #4442@0: 270 keys, 2198505 bytes
+2022/05/27-23:47:19.357 5 Generated table #4443@0: 271 keys, 2465951 bytes
+2022/05/27-23:47:19.383 5 Generated table #4444@0: 1600 keys, 2404739 bytes
+2022/05/27-23:47:19.405 5 Generated table #4445@0: 442 keys, 631573 bytes
+2022/05/27-23:47:19.406 5 Compacted 4@0 + 5@1 files => 10026718 bytes
+2022/05/27-23:47:19.407 5 compacted to: files[ 0 5 7 0 0 0 0 ]
+2022/05/27-23:47:19.408 5 Delete type=2 #4429
+2022/05/27-23:47:19.408 5 Delete type=2 #4427
+2022/05/27-23:47:19.408 5 Delete type=2 #4428
+2022/05/27-23:47:19.408 5 Delete type=2 #4430
+2022/05/27-23:47:19.408 5 Delete type=2 #4438
+2022/05/27-23:47:19.408 5 Delete type=2 #4433
+2022/05/27-23:47:19.408 5 Delete type=2 #4431
+2022/05/27-23:47:19.408 5 Delete type=2 #4440
+2022/05/27-23:47:19.408 5 Delete type=2 #4435

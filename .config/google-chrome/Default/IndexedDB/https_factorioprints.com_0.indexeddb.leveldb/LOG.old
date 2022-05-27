@@ -1,0 +1,15 @@
+2022/05/20-22:20:04.569 21b87 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_factorioprints.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/05/20-22:20:04.569 21b87 Recovering log #7
+2022/05/20-22:20:04.569 21b87 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_factorioprints.com_0.indexeddb.leveldb/000007.log 
+2022/05/21-00:56:03.242 22a2a Level-0 table #12: started
+2022/05/21-00:56:03.243 22a2a Level-0 table #12: 545 bytes OK
+2022/05/21-00:56:03.244 22a2a Delete type=0 #7
+2022/05/21-00:56:03.244 22a2a Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/05/21-00:56:03.244 22a2a Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x0d\x00_\x00_\x00s\x00a\x00k\x008\x004\x001\x009\x001\x004\x003\x005' @ 138 : 1
+2022/05/21-00:56:03.244 22a2a Compacting 1@1 + 1@2 files
+2022/05/21-00:56:03.245 22a2a Generated table #13@1: 19 keys, 570 bytes
+2022/05/21-00:56:03.245 22a2a Compacted 1@1 + 1@2 files => 570 bytes
+2022/05/21-00:56:03.246 22a2a compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/05/21-00:56:03.247 22a2a Delete type=2 #12
+2022/05/21-00:56:03.247 22a2a Delete type=2 #9
+2022/05/21-00:56:03.247 22a2a Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x0d\x00_\x00_\x00s\x00a\x00k\x008\x004\x001\x009\x001\x004\x003\x005' @ 138 : 1 .. (end); will stop at (end)

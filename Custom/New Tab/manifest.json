@@ -8,5 +8,5 @@
     },
     "manifest_version":  3,
         "permissions": [
-        "storage", "tabs", "<all_urls>", "activeTab", "http://*/*", "https://*/*"]
+        "storage", "tabs", "activeTab"]
   }

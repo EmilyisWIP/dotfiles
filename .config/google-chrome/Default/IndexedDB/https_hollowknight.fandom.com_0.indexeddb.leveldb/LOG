@@ -1,0 +1,7 @@
+2021/11/01-11:59:47.045 11453 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_hollowknight.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/11/01-11:59:47.045 11453 Recovering log #3
+2021/11/01-11:59:47.051 11453 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_hollowknight.fandom.com_0.indexeddb.leveldb/000003.log 
+2021/11/01-14:13:16.379 12971 Level-0 table #5: started
+2021/11/01-14:13:16.398 12971 Level-0 table #5: 450599 bytes OK
+2021/11/01-14:13:16.402 12971 Delete type=0 #3
+2021/11/01-14:13:16.403 12971 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

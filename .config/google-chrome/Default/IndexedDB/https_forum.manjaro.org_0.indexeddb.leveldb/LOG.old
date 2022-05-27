@@ -1,0 +1,15 @@
+2022/01/15-19:33:26.585 dda50 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_forum.manjaro.org_0.indexeddb.leveldb/MANIFEST-000001
+2022/01/15-19:33:26.585 dda50 Recovering log #4
+2022/01/15-19:33:26.591 dda50 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_forum.manjaro.org_0.indexeddb.leveldb/000004.log 
+2022/01/15-19:37:30.501 de06d Level-0 table #8: started
+2022/01/15-19:37:30.507 de06d Level-0 table #8: 222081 bytes OK
+2022/01/15-19:37:30.508 de06d Delete type=0 #4
+2022/01/15-19:37:30.509 de06d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/01/15-19:37:30.509 de06d Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01 \x03\x00pA^\xf0\xe5wB\x00\x01N\x00d\x00i\x00s\x00c\x00o\x00u\x00r\x00s\x00e\x00-\x001\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00f\x00o\x00r\x00u\x00m\x00.\x00m\x00a\x00n\x00j\x00a\x00r\x00o\x00.\x00o\x00r\x00g\x00/\x00i\x00m\x00a\x00g\x00e\x00s\x00/\x00e\x00m\x00o\x00j\x00i\x00/\x00t\x00w\x00i\x00t\x00t\x00e\x00r\x00/\x00h\x00e\x00a\x00r\x00t\x00p\x00u\x00l\x00s\x00e\x00.\x00p\x00n\x00g\x00?\x00v\x00=\x001\x002' @ 7438 : 1
+2022/01/15-19:37:30.509 de06d Compacting 1@1 + 1@2 files
+2022/01/15-19:37:30.514 de06d Generated table #9@1: 390 keys, 47265 bytes
+2022/01/15-19:37:30.514 de06d Compacted 1@1 + 1@2 files => 47265 bytes
+2022/01/15-19:37:30.515 de06d compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/01/15-19:37:30.515 de06d Delete type=2 #5
+2022/01/15-19:37:30.515 de06d Delete type=2 #8
+2022/01/15-19:37:30.515 de06d Manual compaction at level-1 from '\x00\x01\x01 \x03\x00pA^\xf0\xe5wB\x00\x01N\x00d\x00i\x00s\x00c\x00o\x00u\x00r\x00s\x00e\x00-\x001\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00f\x00o\x00r\x00u\x00m\x00.\x00m\x00a\x00n\x00j\x00a\x00r\x00o\x00.\x00o\x00r\x00g\x00/\x00i\x00m\x00a\x00g\x00e\x00s\x00/\x00e\x00m\x00o\x00j\x00i\x00/\x00t\x00w\x00i\x00t\x00t\x00e\x00r\x00/\x00h\x00e\x00a\x00r\x00t\x00p\x00u\x00l\x00s\x00e\x00.\x00p\x00n\x00g\x00?\x00v\x00=\x001\x002' @ 7438 : 1 .. (end); will stop at (end)

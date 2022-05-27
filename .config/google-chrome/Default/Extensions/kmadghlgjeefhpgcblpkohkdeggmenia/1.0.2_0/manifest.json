@@ -1,0 +1,19 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "description": "Steam Search. Start writing 'steam' and the game you are searching. You can also filter by OS. Extension created by Ale Mohamad.",
+   "icons": {
+      "128": "images/icon_128.png",
+      "19": "images/icon_19.png",
+      "38": "images/icon_38.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4ohkTYcrEf42KzTZ4X4h599rO/Ro5GFLoIm8bJik6/lHSBKpD5cVMPgLCoxwVVxQNEvSF1fIklv8kJI77dnUZb18jFZ2XZh8EYkKjjkLexcw/a8fkvKJUyYUYrDNyr1Nhw3joHXdhUk+9qZW5ohg9cw1LwRSWrXewt0IOff8+fbRjtBSuSMc6wvDv9t3hCHd2SZ4bb073FTEBgd2NNpy2/MWpTtfAiEOTHSIgTwpv67HT/eX9I2qtuODTgN9mQUmIBnM6AKB/vMpDf54XlqRCtVD02t8upths0vtOQ4fXUcqsIzQRS5HyC4aOTPQ3crEua14+py0G/kOMY4ZaBnNwQIDAQAB",
+   "manifest_version": 2,
+   "name": "Steam Search",
+   "omnibox": {
+      "keyword": "steam"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2"
+}

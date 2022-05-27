@@ -1,0 +1,7 @@
+2022/01/10-16:35:37.394 44c59 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_forums.developer.nvidia.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/01/10-16:35:37.395 44c59 Recovering log #3
+2022/01/10-16:35:37.408 44c59 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_forums.developer.nvidia.com_0.indexeddb.leveldb/000003.log 
+2022/01/10-16:36:10.937 40a7b Level-0 table #5: started
+2022/01/10-16:36:10.940 40a7b Level-0 table #5: 25441 bytes OK
+2022/01/10-16:36:10.942 40a7b Delete type=0 #3
+2022/01/10-16:36:10.942 40a7b Manual compaction at level-0 from (begin) .. (end); will stop at (end)

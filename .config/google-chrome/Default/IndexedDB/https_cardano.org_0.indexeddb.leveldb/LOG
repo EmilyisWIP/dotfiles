@@ -1,0 +1,6 @@
+2022/03/04-17:26:55.187 4714f Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_cardano.org_0.indexeddb.leveldb since it was missing.
+2022/03/04-17:26:55.190 4714f Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_cardano.org_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/04-17:27:36.111 472a8 Level-0 table #5: started
+2022/03/04-17:27:36.112 472a8 Level-0 table #5: 2430 bytes OK
+2022/03/04-17:27:36.113 472a8 Delete type=0 #3
+2022/03/04-17:27:36.113 472a8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,0 +1,7 @@
+2022/03/01-23:14:03.208 13881 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.merriam-webster.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/01-23:14:03.208 13881 Recovering log #12
+2022/03/01-23:14:03.208 13881 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.merriam-webster.com_0.indexeddb.leveldb/000012.log 
+2022/03/01-23:14:03.392 13882 Level-0 table #18: started
+2022/03/01-23:14:03.392 13882 Level-0 table #18: 1026 bytes OK
+2022/03/01-23:14:03.393 13882 Delete type=0 #12
+2022/03/01-23:14:03.393 13882 Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)

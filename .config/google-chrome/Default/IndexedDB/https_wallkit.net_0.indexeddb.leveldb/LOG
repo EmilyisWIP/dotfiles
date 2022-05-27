@@ -1,0 +1,6 @@
+2021/11/13-21:16:52.653 4fe59 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_wallkit.net_0.indexeddb.leveldb since it was missing.
+2021/11/13-21:16:52.656 4fe59 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_wallkit.net_0.indexeddb.leveldb/MANIFEST-000001
+2021/11/13-21:17:23.851 4fef1 Level-0 table #5: started
+2021/11/13-21:17:23.851 4fef1 Level-0 table #5: 1143 bytes OK
+2021/11/13-21:17:23.852 4fef1 Delete type=0 #3
+2021/11/13-21:17:23.853 4fef1 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

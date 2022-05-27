@@ -1,0 +1,6 @@
+2021/10/28-19:23:19.009 3b0fd Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_designer.gravit.io_0.indexeddb.leveldb since it was missing.
+2021/10/28-19:23:19.016 3b0fd Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_designer.gravit.io_0.indexeddb.leveldb/MANIFEST-000001
+2021/10/28-19:23:29.094 3b153 Level-0 table #5: started
+2021/10/28-19:23:29.097 3b153 Level-0 table #5: 1995 bytes OK
+2021/10/28-19:23:29.104 3b153 Delete type=0 #3
+2021/10/28-19:23:29.104 3b153 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

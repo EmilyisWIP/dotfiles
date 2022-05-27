@@ -1,0 +1,15 @@
+2021/12/31-14:47:22.860 10635a Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.kapwing.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/31-14:47:22.860 10635a Recovering log #4
+2021/12/31-14:47:22.860 10635a Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.kapwing.com_0.indexeddb.leveldb/000004.log 
+2021/12/31-14:48:01.169 104156 Level-0 table #8: started
+2021/12/31-14:48:01.171 104156 Level-0 table #8: 6671 bytes OK
+2021/12/31-14:48:01.172 104156 Delete type=0 #4
+2021/12/31-14:48:01.172 104156 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/12/31-14:48:01.172 104156 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01 \x03\x00@=\xec\x0b\xe1wB\x00\x01*\x00i\x00m\x00a\x00g\x00e\x00s\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00w\x00w\x00w\x00.\x00k\x00a\x00p\x00w\x00i\x00n\x00g\x00.\x00c\x00o\x00m\x00/\x00l\x00o\x00g\x00o\x001\x009\x002\x00.\x00p\x00n\x00g' @ 785 : 1
+2021/12/31-14:48:01.172 104156 Compacting 1@1 + 1@2 files
+2021/12/31-14:48:01.173 104156 Generated table #9@1: 135 keys, 11311 bytes
+2021/12/31-14:48:01.173 104156 Compacted 1@1 + 1@2 files => 11311 bytes
+2021/12/31-14:48:01.174 104156 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/12/31-14:48:01.174 104156 Delete type=2 #5
+2021/12/31-14:48:01.174 104156 Delete type=2 #8
+2021/12/31-14:48:01.175 104156 Manual compaction at level-1 from '\x00\x02\x01 \x03\x00@=\xec\x0b\xe1wB\x00\x01*\x00i\x00m\x00a\x00g\x00e\x00s\x00|\x00h\x00t\x00t\x00p\x00s\x00:\x00/\x00/\x00w\x00w\x00w\x00.\x00k\x00a\x00p\x00w\x00i\x00n\x00g\x00.\x00c\x00o\x00m\x00/\x00l\x00o\x00g\x00o\x001\x009\x002\x00.\x00p\x00n\x00g' @ 785 : 1 .. (end); will stop at (end)

@@ -1,0 +1,6 @@
+2021/10/24-15:00:44.427 10f73 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_account.vital.audio_0.indexeddb.leveldb since it was missing.
+2021/10/24-15:00:44.434 10f73 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_account.vital.audio_0.indexeddb.leveldb/MANIFEST-000001
+2021/10/24-15:02:20.275 10f5c Level-0 table #5: started
+2021/10/24-15:02:20.276 10f5c Level-0 table #5: 9278 bytes OK
+2021/10/24-15:02:20.277 10f5c Delete type=0 #3
+2021/10/24-15:02:20.277 10f5c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

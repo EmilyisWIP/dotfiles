@@ -1,0 +1,26 @@
+2022/03/01-23:13:57.337 13883 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.merriam-webster.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/01-23:13:57.337 13883 Recovering log #6
+2022/03/01-23:13:57.337 13883 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.merriam-webster.com_0.indexeddb.leveldb/000006.log 
+2022/03/01-23:13:57.577 13881 Level-0 table #11: started
+2022/03/01-23:13:57.578 13881 Level-0 table #11: 1029 bytes OK
+2022/03/01-23:13:57.579 13881 Delete type=0 #6
+2022/03/01-23:13:57.579 13881 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/03/01-23:13:59.584 13881 Level-0 table #13: started
+2022/03/01-23:13:59.585 13881 Level-0 table #13: 256 bytes OK
+2022/03/01-23:13:59.587 13881 Delete type=0 #10
+2022/03/01-23:13:59.587 13881 Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x00\x00\x002\x02\x02\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 132 : 0
+2022/03/01-23:13:59.587 13881 Compacting 1@0 + 1@1 files
+2022/03/01-23:13:59.588 13881 Generated table #14@0: 4 keys, 234 bytes
+2022/03/01-23:13:59.588 13881 Compacted 1@0 + 1@1 files => 234 bytes
+2022/03/01-23:13:59.589 13881 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/03/01-23:13:59.590 13881 Delete type=2 #13
+2022/03/01-23:13:59.590 13881 Delete type=2 #11
+2022/03/01-23:13:59.590 13881 Manual compaction at level-0 from '\x00\x00\x00\x002\x02\x02\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 132 : 0 .. (end); will stop at (end)
+2022/03/01-23:13:59.590 13881 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 135 : 1
+2022/03/01-23:13:59.590 13881 Compacting 1@1 + 1@2 files
+2022/03/01-23:13:59.591 13881 Generated table #15@1: 6 keys, 268 bytes
+2022/03/01-23:13:59.591 13881 Compacted 1@1 + 1@2 files => 268 bytes
+2022/03/01-23:13:59.592 13881 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/03/01-23:13:59.593 13881 Delete type=2 #14
+2022/03/01-23:13:59.593 13881 Delete type=2 #8
+2022/03/01-23:13:59.593 13881 Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 135 : 1 .. (end); will stop at (end)

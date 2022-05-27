@@ -1,0 +1,7 @@
+2021/12/31-11:55:06.269 cd81 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.xbox.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/31-11:55:06.269 cd81 Recovering log #3
+2021/12/31-11:55:06.270 cd81 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.xbox.com_0.indexeddb.leveldb/000003.log 
+2021/12/31-13:14:49.861 91984 Level-0 table #5: started
+2021/12/31-13:14:49.863 91984 Level-0 table #5: 4425 bytes OK
+2021/12/31-13:14:49.865 91984 Delete type=0 #3
+2021/12/31-13:14:49.865 91984 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

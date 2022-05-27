@@ -1,0 +1,64 @@
+{
+   "applications": {
+      "gecko": {
+         "id": "{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}",
+         "strict_min_version": "55.0"
+      }
+   },
+   "background": {
+      "scripts": [ "js/polyfill.js", "js/toolbox.js", "js/msg.js", "js/prefs.js", "js/storage-util.js", "js/sections-util.js", "js/worker-util.js", "js/cmpver.js", "background/common.js", "background/db.js", "background/color-scheme.js", "background/icon-manager.js", "background/navigation-manager.js", "background/style-search-db.js", "background/style-via-webrequest.js", "background/sync-manager.js", "background/tab-manager.js", "background/token-manager.js", "background/update-manager.js", "background/usercss-install-helper.js", "background/usercss-manager.js", "background/usw-api.js", "background/style-manager.js", "background/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "images/icon/16w.png",
+         "19": "images/icon/19w.png",
+         "32": "images/icon/32w.png",
+         "38": "images/icon/38w.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "Stylus (beta)"
+   },
+   "commands": {
+      "_execute_browser_action": {
+
+      },
+      "openManage": {
+         "description": "__MSG_openManage__"
+      },
+      "reload": {
+         "description": "__MSG_reload__"
+      },
+      "styleDisableAll": {
+         "description": "__MSG_disableAllStyles__"
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/polyfill.js", "js/msg.js", "js/prefs.js", "content/style-injector.js", "content/apply.js" ],
+      "match_about_blank": true,
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "content/install-hook-userstyles.js" ],
+      "matches": [ "http://userstyles.org/*", "https://userstyles.org/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_description__",
+   "differential_fingerprint": "1.e842e5470d08d8b9f680549565db9f72597c6e9eeda57147db1a8009019e3064",
+   "homepage_url": "https://add0n.com/stylus.html",
+   "icons": {
+      "128": "images/icon/128.png",
+      "16": "images/icon/16.png",
+      "32": "images/icon/32.png",
+      "48": "images/icon/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3D/PhIwFAsu1/nzgKJwuAThqSWDSidc7C9lhLm2PfdtZcDYlyEblKm1psJrPcfUlUd2UHmsGs3C4kP/rse3EOejk19mQ4sNiUtKbUX1+zBmBgbtOYmQ/MiDKWU9QO1DPBr0kp2K4QNcE10cwvta6ogbCayhGe7azlwQ8f61rJu3lGs0vtETcB0avhKxjXfAIWuMMUxVl3SDzYh0Z9H69ExoflfvSwnaPjQ5FydwX0JDrxUlczVzxlUesJ5d4jZ0wWHDGje2xewnbOfKwoTLeVf57Sf83EQG+fttJ5CzemJVMgG5+LZthi5leUhd7qtCve41ncNZoAUtlWzK1nKd3UQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "55",
+   "name": "Stylus (beta)",
+   "permissions": [ "tabs", "webNavigation", "webRequest", "webRequestBlocking", "contextMenus", "storage", "unlimitedStorage", "alarms", "identity", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.23"
+}

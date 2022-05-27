@@ -1,0 +1,15 @@
+2021/11/06-15:03:28.295 d4415 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.techradar.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/11/06-15:03:28.295 d4415 Recovering log #4
+2021/11/06-15:03:28.295 d4415 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.techradar.com_0.indexeddb.leveldb/000004.log 
+2021/11/06-15:03:30.403 d4543 Level-0 table #8: started
+2021/11/06-15:03:30.403 d4543 Level-0 table #8: 209 bytes OK
+2021/11/06-15:03:30.404 d4543 Delete type=0 #4
+2021/11/06-15:03:30.404 d4543 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/11/06-15:03:30.404 d3895 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x06' @ 171 : 1
+2021/11/06-15:03:30.404 d3895 Compacting 1@1 + 1@2 files
+2021/11/06-15:03:30.405 d3895 Generated table #9@1: 54 keys, 1101 bytes
+2021/11/06-15:03:30.405 d3895 Compacted 1@1 + 1@2 files => 1101 bytes
+2021/11/06-15:03:30.406 d3895 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/11/06-15:03:30.406 d3895 Delete type=2 #5
+2021/11/06-15:03:30.406 d3895 Delete type=2 #8
+2021/11/06-15:03:30.406 d3895 Manual compaction at level-1 from '\x00\x00\x00\x00\x06' @ 171 : 1 .. (end); will stop at (end)

@@ -1,0 +1,15 @@
+2022/05/26-17:26:25.184 36997 Reusing MANIFEST /home/subject05/.config/YouTube Music/Local Storage/leveldb/MANIFEST-000001
+2022/05/26-17:26:25.184 36997 Recovering log #42
+2022/05/26-17:26:25.185 36997 Reusing old log /home/subject05/.config/YouTube Music/Local Storage/leveldb/000042.log 
+2022/05/26-17:47:27.974 37b93 Level-0 table #46: started
+2022/05/26-17:47:27.976 37b93 Level-0 table #46: 14088 bytes OK
+2022/05/26-17:47:27.977 37b93 Delete type=0 #42
+2022/05/26-17:47:27.978 37b93 Compacting 4@0 + 1@1 files
+2022/05/26-17:47:27.980 37b93 Generated table #47@0: 9 keys, 677 bytes
+2022/05/26-17:47:27.980 37b93 Compacted 4@0 + 1@1 files => 677 bytes
+2022/05/26-17:47:27.981 37b93 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/05/26-17:47:27.981 37b93 Delete type=2 #46
+2022/05/26-17:47:27.981 37b93 Delete type=2 #40
+2022/05/26-17:47:27.981 37b93 Delete type=2 #37
+2022/05/26-17:47:27.981 37b93 Delete type=2 #43
+2022/05/26-17:47:27.981 37b93 Delete type=2 #34

@@ -1,0 +1,6 @@
+2022/02/17-15:34:21.455 25b6c Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_devimalplanet.com_0.indexeddb.leveldb since it was missing.
+2022/02/17-15:34:21.457 25b6c Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_devimalplanet.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/02/17-15:35:03.666 25b6a Level-0 table #5: started
+2022/02/17-15:35:03.667 25b6a Level-0 table #5: 2482 bytes OK
+2022/02/17-15:35:03.668 25b6a Delete type=0 #3
+2022/02/17-15:35:03.668 25b6a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

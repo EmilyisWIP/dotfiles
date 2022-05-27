@@ -1,0 +1,6 @@
+2022/03/17-18:08:16.824 ddb5 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_youtube.googleapis.com_0.indexeddb.leveldb since it was missing.
+2022/03/17-18:08:16.831 ddb5 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_youtube.googleapis.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/03/17-18:17:50.310 dfa3 Level-0 table #5: started
+2022/03/17-18:17:50.312 dfa3 Level-0 table #5: 1208 bytes OK
+2022/03/17-18:17:50.313 dfa3 Delete type=0 #3
+2022/03/17-18:17:50.313 dfa3 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

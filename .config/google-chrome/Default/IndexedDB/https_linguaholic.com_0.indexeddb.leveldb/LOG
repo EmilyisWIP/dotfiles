@@ -1,0 +1,6 @@
+2022/02/22-19:30:42.569 44c06 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_linguaholic.com_0.indexeddb.leveldb since it was missing.
+2022/02/22-19:30:42.575 44c06 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_linguaholic.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/02/22-19:30:58.416 44bc0 Level-0 table #5: started
+2022/02/22-19:30:58.416 44bc0 Level-0 table #5: 1747 bytes OK
+2022/02/22-19:30:58.417 44bc0 Delete type=0 #3
+2022/02/22-19:30:58.417 44bc0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

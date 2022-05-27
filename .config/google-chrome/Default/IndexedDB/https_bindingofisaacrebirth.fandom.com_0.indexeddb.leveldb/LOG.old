@@ -1,0 +1,15 @@
+2022/02/15-14:31:30.161 242f Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_bindingofisaacrebirth.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/02/15-14:31:30.162 242f Recovering log #4
+2022/02/15-14:31:30.167 242f Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_bindingofisaacrebirth.fandom.com_0.indexeddb.leveldb/000004.log 
+2022/02/15-16:46:18.618 5a15 Level-0 table #8: started
+2022/02/15-16:46:18.623 5a15 Level-0 table #8: 249193 bytes OK
+2022/02/15-16:46:18.624 5a15 Delete type=0 #4
+2022/02/15-16:46:18.624 5a15 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/02/15-16:46:18.624 5a15 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x04\x02\x01\x07\x00c\x00u\x00r\x00r\x00e\x00n\x00t' @ 21764 : 1
+2022/02/15-16:46:18.624 5a15 Compacting 1@1 + 1@2 files
+2022/02/15-16:46:18.630 5a15 Generated table #9@1: 281 keys, 18037 bytes
+2022/02/15-16:46:18.630 5a15 Compacted 1@1 + 1@2 files => 18037 bytes
+2022/02/15-16:46:18.631 5a15 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/02/15-16:46:18.631 5a15 Delete type=2 #5
+2022/02/15-16:46:18.631 5a15 Delete type=2 #8
+2022/02/15-16:46:18.631 5a15 Manual compaction at level-1 from '\x00\x01\x04\x02\x01\x07\x00c\x00u\x00r\x00r\x00e\x00n\x00t' @ 21764 : 1 .. (end); will stop at (end)

@@ -1,0 +1,6 @@
+2021/12/13-11:57:17.601 1e221 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_mobile.twitter.com_0.indexeddb.leveldb since it was missing.
+2021/12/13-11:57:17.604 1e221 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_mobile.twitter.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/12/13-12:07:44.835 1e18f Level-0 table #5: started
+2021/12/13-12:07:44.836 1e18f Level-0 table #5: 1292 bytes OK
+2021/12/13-12:07:44.837 1e18f Delete type=0 #3
+2021/12/13-12:07:44.838 1e18f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

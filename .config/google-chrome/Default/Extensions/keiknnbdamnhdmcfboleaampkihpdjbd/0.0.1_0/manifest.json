@@ -1,0 +1,17 @@
+{
+   "author": "Matthew Felgate",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "description": "As you type DuckDuckgo and uses I'm feeling lucky to go to first result",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2Pii2ey8MUAE7XFxFpRM32mqNVaP7TIhb0ugFeFAteKCwDnsb13yUr0tkmOjP4WSPkO6VYi5T9j2ykXJ5fOs3A4Ugvvli2SZgzSlykWjhCyhTJjdEEspcKGYY7Gh1DDnagxi3+Sb2iRKKpqxj7XajT+jkh9ZXxuPUsxyIWsmfgEDiDE/0aWL9qnKBdEGtfEW5gBkIs47R0DGIX1vxIVwpqeHGULjuYfpDyWlFmdrsFRpPhR8K5vxVxrX73DYa9oXJFAbMVCa6VNwIQoQxmULTNE7Hb4nkSNujh5cHt+k7la22v0ZHYehp16LT052oeLDWwniO0783jfjbYRztnfX/wIDAQAB",
+   "manifest_version": 2,
+   "name": "Instant Duck",
+   "omnibox": {
+      "keyword": "d"
+   },
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.1"
+}

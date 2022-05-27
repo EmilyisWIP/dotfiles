@@ -1,0 +1,15 @@
+2022/05/25-21:21:21.805 34291 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_minecraft.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/05/25-21:21:21.805 34291 Recovering log #4
+2022/05/25-21:21:21.808 34291 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_minecraft.fandom.com_0.indexeddb.leveldb/000004.log 
+2022/05/25-21:22:12.968 34303 Level-0 table #8: started
+2022/05/25-21:22:12.971 34303 Level-0 table #8: 201397 bytes OK
+2022/05/25-21:22:12.973 34303 Delete type=0 #4
+2022/05/25-21:22:12.973 34303 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2022/05/25-21:22:12.973 34303 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x04\x02\x01\x07\x00c\x00u\x00r\x00r\x00e\x00n\x00t' @ 440 : 1
+2022/05/25-21:22:12.973 34303 Compacting 1@1 + 1@2 files
+2022/05/25-21:22:12.976 34303 Generated table #9@1: 321 keys, 21217 bytes
+2022/05/25-21:22:12.976 34303 Compacted 1@1 + 1@2 files => 21217 bytes
+2022/05/25-21:22:12.977 34303 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/05/25-21:22:12.977 34303 Delete type=2 #5
+2022/05/25-21:22:12.977 34303 Delete type=2 #8
+2022/05/25-21:22:12.977 34303 Manual compaction at level-1 from '\x00\x01\x04\x02\x01\x07\x00c\x00u\x00r\x00r\x00e\x00n\x00t' @ 440 : 1 .. (end); will stop at (end)

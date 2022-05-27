@@ -1,0 +1,36 @@
+2022/02/19-17:11:52.875 66d7e Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_odysee.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/02/19-17:11:52.875 66d7e Recovering log #26
+2022/02/19-17:11:52.875 66d7e Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_odysee.com_0.indexeddb.leveldb/000026.log 
+2022/02/19-17:11:52.875 66d7e Delete type=2 #25
+2022/02/19-17:11:52.883 65bed Level-0 table #31: started
+2022/02/19-17:11:52.884 65bed Level-0 table #31: 32252 bytes OK
+2022/02/19-17:11:52.885 65bed Delete type=0 #26
+2022/02/19-17:11:52.885 65bed Manual compaction at level-0 from '\x00\x0b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0b\x00\x00\x05' @ 2301 : 1
+2022/02/19-17:11:52.885 65bed Compacting 1@0 + 1@1 files
+2022/02/19-17:11:52.886 65bed Generated table #32@0: 769 keys, 10504 bytes
+2022/02/19-17:11:52.886 65bed Compacted 1@0 + 1@1 files => 10504 bytes
+2022/02/19-17:11:52.887 65bed compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/02/19-17:11:52.887 65bed Delete type=2 #31
+2022/02/19-17:11:52.887 65bed Manual compaction at level-0 from '\x00\x0b\x00\x00\x05' @ 2301 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/02/19-17:11:53.686 66f34 Level-0 table #34: started
+2022/02/19-17:11:53.687 66f34 Level-0 table #34: 597 bytes OK
+2022/02/19-17:11:53.689 66f34 Delete type=0 #30
+2022/02/19-17:11:53.689 66f34 Delete type=2 #28
+2022/02/19-17:11:53.689 66f34 Manual compaction at level-0 from '\x00\x0c\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0c\x00\x00\x05' @ 2320 : 1
+2022/02/19-17:11:53.689 66f34 Compacting 1@0 + 1@1 files
+2022/02/19-17:11:53.690 66f34 Generated table #35@0: 773 keys, 10538 bytes
+2022/02/19-17:11:53.690 66f34 Compacted 1@0 + 1@1 files => 10538 bytes
+2022/02/19-17:11:53.691 66f34 compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/02/19-17:11:53.691 66f34 Delete type=2 #34
+2022/02/19-17:11:53.691 66f34 Manual compaction at level-0 from '\x00\x0c\x00\x00\x05' @ 2320 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/02/19-17:11:53.768 65bed Level-0 table #37: started
+2022/02/19-17:11:53.768 65bed Level-0 table #37: 596 bytes OK
+2022/02/19-17:11:53.769 65bed Delete type=0 #33
+2022/02/19-17:11:53.769 65bed Delete type=2 #32
+2022/02/19-17:11:53.769 65bed Manual compaction at level-0 from '\x00\x0d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0e\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0d\x00\x00\x05' @ 2337 : 1
+2022/02/19-17:11:53.769 65bed Compacting 1@0 + 1@1 files
+2022/02/19-17:11:53.770 65bed Generated table #38@0: 777 keys, 10579 bytes
+2022/02/19-17:11:53.770 65bed Compacted 1@0 + 1@1 files => 10579 bytes
+2022/02/19-17:11:53.771 65bed compacted to: files[ 0 1 1 0 0 0 0 ]
+2022/02/19-17:11:53.771 65bed Delete type=2 #37
+2022/02/19-17:11:53.771 65bed Manual compaction at level-0 from '\x00\x0d\x00\x00\x05' @ 2337 : 1 .. '\x00\x0e\x00\x00\x00' @ 0 : 0; will stop at (end)
