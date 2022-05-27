@@ -1,6 +1,0 @@
-2021/10/17-10:34:53.593 385d Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.tomshardware.com_0.indexeddb.leveldb since it was missing.
-2021/10/17-10:34:53.599 385d Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.tomshardware.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/10/17-10:35:21.317 3aa2 Level-0 table #5: started
-2021/10/17-10:35:21.317 3aa2 Level-0 table #5: 2469 bytes OK
-2021/10/17-10:35:21.318 3aa2 Delete type=0 #3
-2021/10/17-10:35:21.318 3aa2 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

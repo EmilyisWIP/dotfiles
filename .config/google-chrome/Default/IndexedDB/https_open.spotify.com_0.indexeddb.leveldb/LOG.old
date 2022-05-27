@@ -1,6 +1,0 @@
-2022/03/17-19:42:47.990 10b6f Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_open.spotify.com_0.indexeddb.leveldb since it was missing.
-2022/03/17-19:42:47.996 10b6f Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_open.spotify.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/03/17-19:42:58.227 10b6f Level-0 table #5: started
-2022/03/17-19:42:58.229 10b6f Level-0 table #5: 15023 bytes OK
-2022/03/17-19:42:58.230 10b6f Delete type=0 #3
-2022/03/17-19:42:58.231 10b6f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

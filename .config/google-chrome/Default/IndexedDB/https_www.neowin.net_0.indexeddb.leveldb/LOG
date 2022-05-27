@@ -1,6 +1,0 @@
-2021/11/06-23:55:59.879 ee57a Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.neowin.net_0.indexeddb.leveldb since it was missing.
-2021/11/06-23:55:59.881 ee57a Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.neowin.net_0.indexeddb.leveldb/MANIFEST-000001
-2021/11/06-23:56:32.360 ee57a Level-0 table #5: started
-2021/11/06-23:56:32.361 ee57a Level-0 table #5: 1206 bytes OK
-2021/11/06-23:56:32.363 ee57a Delete type=0 #3
-2021/11/06-23:56:32.363 ee57a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

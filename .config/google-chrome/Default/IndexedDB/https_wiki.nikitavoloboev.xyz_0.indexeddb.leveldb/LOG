@@ -1,6 +1,0 @@
-2022/04/12-17:18:57.630 790d1 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_wiki.nikitavoloboev.xyz_0.indexeddb.leveldb since it was missing.
-2022/04/12-17:18:57.637 790d1 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_wiki.nikitavoloboev.xyz_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/12-18:05:21.773 7e366 Level-0 table #5: started
-2022/04/12-18:05:21.774 7e366 Level-0 table #5: 1097 bytes OK
-2022/04/12-18:05:21.775 7e366 Delete type=0 #3
-2022/04/12-18:05:21.775 7e366 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

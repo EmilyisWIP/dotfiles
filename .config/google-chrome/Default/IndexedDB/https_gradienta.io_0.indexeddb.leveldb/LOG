@@ -1,6 +1,0 @@
-2021/11/01-19:24:06.914 2905a Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_gradienta.io_0.indexeddb.leveldb since it was missing.
-2021/11/01-19:24:06.917 2905a Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_gradienta.io_0.indexeddb.leveldb/MANIFEST-000001
-2021/11/01-19:25:22.065 2905b Level-0 table #5: started
-2021/11/01-19:25:22.068 2905b Level-0 table #5: 11687 bytes OK
-2021/11/01-19:25:22.069 2905b Delete type=0 #3
-2021/11/01-19:25:22.070 2905b Manual compaction at level-0 from (begin) .. (end); will stop at (end)

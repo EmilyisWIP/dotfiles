@@ -1,6 +1,0 @@
-2022/04/15-11:09:41.909 19ce3 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_bytexd.com_0.indexeddb.leveldb since it was missing.
-2022/04/15-11:09:41.916 19ce3 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_bytexd.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/04/15-11:09:44.279 19ce7 Level-0 table #5: started
-2022/04/15-11:09:44.280 19ce7 Level-0 table #5: 858 bytes OK
-2022/04/15-11:09:44.281 19ce7 Delete type=0 #3
-2022/04/15-11:09:44.281 19ce7 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

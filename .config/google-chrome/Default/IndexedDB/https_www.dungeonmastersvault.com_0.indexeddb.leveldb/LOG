@@ -1,7 +1,0 @@
-2022/02/22-19:52:41.391 45ec0 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.dungeonmastersvault.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/02/22-19:52:41.391 45ec0 Recovering log #3
-2022/02/22-19:52:41.392 45ec0 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.dungeonmastersvault.com_0.indexeddb.leveldb/000003.log 
-2022/02/22-20:37:08.464 47e74 Level-0 table #5: started
-2022/02/22-20:37:08.465 47e74 Level-0 table #5: 1551 bytes OK
-2022/02/22-20:37:08.466 47e74 Delete type=0 #3
-2022/02/22-20:37:08.466 47e74 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

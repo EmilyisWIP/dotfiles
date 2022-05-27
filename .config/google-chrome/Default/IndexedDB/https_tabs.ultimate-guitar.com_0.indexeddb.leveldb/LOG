@@ -1,7 +1,0 @@
-2022/05/03-16:27:56.147 13f88 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_tabs.ultimate-guitar.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/05/03-16:27:56.147 13f88 Recovering log #3
-2022/05/03-16:27:56.148 13f88 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_tabs.ultimate-guitar.com_0.indexeddb.leveldb/000003.log 
-2022/05/03-16:28:55.399 13f7c Level-0 table #5: started
-2022/05/03-16:28:55.400 13f7c Level-0 table #5: 73574 bytes OK
-2022/05/03-16:28:55.401 13f7c Delete type=0 #3
-2022/05/03-16:28:55.402 13f7c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

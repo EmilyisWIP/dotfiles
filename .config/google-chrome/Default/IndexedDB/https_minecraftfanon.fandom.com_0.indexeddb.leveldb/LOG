@@ -1,6 +1,0 @@
-2021/11/30-21:17:20.584 9daf8 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_minecraftfanon.fandom.com_0.indexeddb.leveldb since it was missing.
-2021/11/30-21:17:20.586 9daf8 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_minecraftfanon.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/11/30-21:17:35.167 9dadd Level-0 table #5: started
-2021/11/30-21:17:35.170 9dadd Level-0 table #5: 64238 bytes OK
-2021/11/30-21:17:35.170 9dadd Delete type=0 #3
-2021/11/30-21:17:35.171 9dadd Manual compaction at level-0 from (begin) .. (end); will stop at (end)

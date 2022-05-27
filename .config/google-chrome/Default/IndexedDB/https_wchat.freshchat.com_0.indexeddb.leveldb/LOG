@@ -1,6 +1,0 @@
-2022/02/12-17:20:47.729 28947 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_wchat.freshchat.com_0.indexeddb.leveldb since it was missing.
-2022/02/12-17:20:47.731 28947 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_wchat.freshchat.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/02/12-17:36:15.730 293f7 Level-0 table #5: started
-2022/02/12-17:36:15.732 293f7 Level-0 table #5: 19894 bytes OK
-2022/02/12-17:36:15.733 293f7 Delete type=0 #3
-2022/02/12-17:36:15.733 293f7 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

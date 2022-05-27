@@ -1,6 +1,0 @@
-2022/03/12-15:58:21.853 4e872 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_as280093.github.io_0.indexeddb.leveldb since it was missing.
-2022/03/12-15:58:21.855 4e872 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_as280093.github.io_0.indexeddb.leveldb/MANIFEST-000001
-2022/03/12-15:58:54.620 4e87c Level-0 table #5: started
-2022/03/12-15:58:54.620 4e87c Level-0 table #5: 5419 bytes OK
-2022/03/12-15:58:54.621 4e87c Delete type=0 #3
-2022/03/12-15:58:54.621 4e87c Manual compaction at level-0 from (begin) .. (end); will stop at (end)

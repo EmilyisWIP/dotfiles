@@ -1,6 +1,0 @@
-2021/10/25-20:38:25.348 11913 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.epicgames.com_0.indexeddb.leveldb since it was missing.
-2021/10/25-20:38:25.357 11913 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.epicgames.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/10/25-20:38:27.369 11792 Level-0 table #5: started
-2021/10/25-20:38:27.370 11792 Level-0 table #5: 882 bytes OK
-2021/10/25-20:38:27.371 11792 Delete type=0 #3
-2021/10/25-20:38:27.371 11792 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

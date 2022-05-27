@@ -1,7 +1,0 @@
-2022/02/14-15:07:43.706 69b9 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.oracle.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/02/14-15:07:43.706 69b9 Recovering log #3
-2022/02/14-15:07:43.706 69b9 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.oracle.com_0.indexeddb.leveldb/000003.log 
-2022/02/14-15:07:49.394 68ad Level-0 table #5: started
-2022/02/14-15:07:49.396 68ad Level-0 table #5: 2459 bytes OK
-2022/02/14-15:07:49.397 68ad Delete type=0 #3
-2022/02/14-15:07:49.397 68ad Manual compaction at level-0 from (begin) .. (end); will stop at (end)

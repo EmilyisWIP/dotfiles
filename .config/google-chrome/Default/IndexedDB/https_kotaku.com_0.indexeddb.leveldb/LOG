@@ -1,6 +1,0 @@
-2022/01/11-21:34:28.469 a634c Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_kotaku.com_0.indexeddb.leveldb since it was missing.
-2022/01/11-21:34:28.472 a634c Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_kotaku.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/01/11-21:34:30.474 a634c Level-0 table #5: started
-2022/01/11-21:34:30.475 a634c Level-0 table #5: 1064 bytes OK
-2022/01/11-21:34:30.476 a634c Delete type=0 #3
-2022/01/11-21:34:30.476 a634c Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

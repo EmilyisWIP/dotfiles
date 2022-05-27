@@ -1,6 +1,0 @@
-2022/02/24-12:18:19.029 55f42 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_americansongwriter.com_0.indexeddb.leveldb since it was missing.
-2022/02/24-12:18:19.035 55f42 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_americansongwriter.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/02/24-12:18:51.035 55ff6 Level-0 table #5: started
-2022/02/24-12:18:51.036 55ff6 Level-0 table #5: 835 bytes OK
-2022/02/24-12:18:51.038 55ff6 Delete type=0 #3
-2022/02/24-12:18:51.038 55ff6 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

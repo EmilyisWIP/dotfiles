@@ -1,6 +1,0 @@
-2022/05/27-23:18:13.631 9d3d Reusing MANIFEST /home/subject05/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
-2022/05/27-23:18:13.631 9d3d Recovering log #2444
-2022/05/27-23:18:13.632 9d3d Reusing old log /home/subject05/.config/google-chrome/Default/Sync Data/LevelDB/002444.log 
-2022/05/28-00:13:27.713 e592 Level-0 table #2449: started
-2022/05/28-00:13:27.719 e592 Level-0 table #2449: 80191 bytes OK
-2022/05/28-00:13:27.720 e592 Delete type=0 #2444

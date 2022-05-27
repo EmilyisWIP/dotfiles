@@ -1,6 +1,0 @@
-2021/12/25-23:44:58.243 79f55 Creating DB /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.nitrotype.com_0.indexeddb.leveldb since it was missing.
-2021/12/25-23:44:58.246 79f55 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.nitrotype.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/12/25-23:45:35.375 79f0f Level-0 table #5: started
-2021/12/25-23:45:35.376 79f0f Level-0 table #5: 855 bytes OK
-2021/12/25-23:45:35.378 79f0f Delete type=0 #3
-2021/12/25-23:45:35.378 79f0f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

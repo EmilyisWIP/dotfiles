@@ -1,7 +1,0 @@
-2021/10/28-14:44:59.991 1f214 Reusing MANIFEST /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.office.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/10/28-14:44:59.991 1f214 Recovering log #3
-2021/10/28-14:44:59.991 1f214 Reusing old log /home/subject05/.config/google-chrome/Default/IndexedDB/https_www.office.com_0.indexeddb.leveldb/000003.log 
-2021/10/28-14:45:32.010 1f0d1 Level-0 table #5: started
-2021/10/28-14:45:32.012 1f0d1 Level-0 table #5: 7955 bytes OK
-2021/10/28-14:45:32.014 1f0d1 Delete type=0 #3
-2021/10/28-14:45:32.014 1f0d1 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
