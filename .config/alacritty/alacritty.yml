@@ -5,9 +5,9 @@ window:
   dynamic_title: false
   dimensions:
     columns: 4
-  padding:
-    x: 4
-    y: 4
+  # padding:
+  #   x: 4
+  #   y: 4
 shell:
   program: /bin/zsh
 
@@ -28,7 +28,7 @@ font:
     # style: italic
 
 key_bindings:
-  - { key: Escape,    mode: ~Search,                         chars: "\u0003"              }
+  - { key: Escape,    mods: Control, mode: ~Search,          chars: "\u0003"              }
   - { key: V,         mods: Control,                         action: Paste                }
   - { key: C,         mods: Control,                         action: Copy                 }
   - { key: C,         mods: Control|Shift,                   chars: "\u0003"              }

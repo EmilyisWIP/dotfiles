@@ -2,6 +2,8 @@
 # Emily's aliases :>
 
 # Variables
+editor="atom --no-sandbox"
+
 zshrc="~/.zshrc"
 fishrc="~/.config/fish/config.fish"
 nurc="$nu.config-path"
@@ -27,9 +29,6 @@ alias starshipcfg= "xdg-open $cfg_starship"
 # alias kittycfg=  "xdg-open $cfg_kitty"
 # alias wezcfg=    "xdg-open $cfg_wezterm"
 
-# Run in terminal without closing
-runinterm (){ alacritty -e zsh -c btop}
-
 # Nala, PACKAGES
 alias update="sudo nala update"
 alias upgrade="sudo nala upgrade"
@@ -50,7 +49,6 @@ alias rm="rm -i"
 # Misc
 alias atom="atom --no-sandbox"
 alias emacs="emacsclient -c -a 'emacs'"
-editor="atom --no-sandbox"
 alias bat="batcat --theme base16"
 alias ls="exa --icons --group-directories-first"
 alias ll="exa -1"
@@ -196,12 +194,11 @@ zle     -N             fh
 # bindkey -M emacs '\er' fh
 
 games () {
-   \cd /home/subject05/Custom/Programs/Games/;
-    game=$(fd -E nohup.out | cut -c 3- | cat | fzf)   # &> /dev/null
+    game=$(fd . ~/.local/share/applications/Games/ | choose --field-separator "/" 6 | choose --field-separator ".desktop" 0 | if [ ! -z $1 ];then fzf -1 -q $1; else fzf;fi )
     if [ ! -z "$game" ];then ansic -n "Playing ";
-    ansic --green --bold $game
-    (nohup zsh -c "$game" & ) &> /dev/null
-    else error-message No game selected;
+    ansic --green --bold $game;
+    game=$(grep '^Exec' ~/.local/share/applications/Games/$game.desktop | tail -1 | sed 's/^Exec=//' | sed 's/%.//' | sed 's/^"//g' | sed 's/" *$//g');
+    (nohup zsh -c "\"$game\"" & )  &> /dev/null
+    else error-message "No game selected";
     fi
-    \rm -f nohup.out;
   }

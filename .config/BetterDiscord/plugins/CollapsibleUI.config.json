@@ -1,6 +1,6 @@
 {
     "currentVersionInfo": {
-        "version": "5.1.5",
+        "version": "5.2.8",
         "hasShownChangelog": true
     },
     "disableTransitions": "false",
@@ -23,7 +23,7 @@
     "cui.userAreaButtonActive": "true",
     "cui.msgBarButtonActive": "true",
     "cui.callContainerButtonActive": "true",
-    "cui.membersListButtonActive": "true",
+    "cui.membersListButtonActive": "false",
     "channelListWidth": "0",
     "enableFullToolbarCollapse": "false",
     "dynamicUncollapseEnabled": "true,true,true,true,true,true,true",

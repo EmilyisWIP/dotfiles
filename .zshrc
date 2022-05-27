@@ -30,8 +30,6 @@ export PATH="/home/subject05/Custom/Programs/:$PATH"
 export PATH="/home/subject05/Custom/Programs/Games/:$PATH"
 export PATH="/home/subject05/.emacs.d/bin:$PATH"
 
-
-
 HIST_STAMPS="yyyy-mm-dd"
 
 zstyle ':completion:*:descriptions' format '[%d]'

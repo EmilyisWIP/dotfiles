@@ -63,7 +63,7 @@
     "TeX": false,
     "        OpenInYouTube": true,
     "RemoveNoRole": false,
-    "DisableStickerSuggestions": true,
+    "DisableStickerSuggestions": false,
     "ClickableMentions": true,
     "UserDetails": true,
     "VoiceChatNotifications": false,
